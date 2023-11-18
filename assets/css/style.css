@@ -1661,8 +1661,14 @@ img {
 /* ******************************
 :: 9.0 COUNTER AREA CSS
 ****************************** */
+.counter-item {
+  max-width: 170px;
+}
 .counter-area .single-counter {
+  display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .counter-area .single-counter::after {
