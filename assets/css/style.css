@@ -3320,8 +3320,8 @@ img {
 @media screen and (max-width: 768px) {
   .css-10z3mwn,
   .css-16u61eb {
-    padding-left: 20px!important;
-    padding-right: 20px!important;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .css-be8jlo {
@@ -3334,23 +3334,6 @@ img {
     max-width: 100%;
     margin-bottom: 20px;
   }
-  @media screen and (max-width: 320px) {
-    .css-10z3mwn,
-    .css-16u61eb {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    .css-be8jlo {
-      font-size: 24px; /* smaller font size for smaller screens */
-    }
-
-    .css-1bng1jn,
-    .css-jt5k18 {
-      flex: 100%; /* stack the image and text vertically on small screens */
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
 
   /* Add other styles here that should apply to mobile devices */
 }
@@ -4872,13 +4855,9 @@ img {
     grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
     grid-gap: 20px 40px; /* Reduce gap */
   }
-.css-fjr8hv{
-  width: auto!important;
-}
+
   .css-zdc3pw {
     font-size: 28px; /* Smaller font for headings */
-    width: auto!important;
-    align-items: baseline!important;
   }
 
   .css-1kng7n8 {
