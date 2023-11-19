@@ -3532,6 +3532,7 @@ img {
     }
     .css-be8jlo, .css-10z3mwn {
         font-size: smaller;
+      padding: 0px!important;
     }
     /* More mobile styles as needed */
 }
@@ -4875,4 +4876,11 @@ img {
   }
 
   /* Add more customizations as needed */
+}
+@media (max-width: 768px) {
+  .css-fjr8hv {
+    width: 0px!important;
+  }
+
+  /* More mobile styles as needed */
 }
