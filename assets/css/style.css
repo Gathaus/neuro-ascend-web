@@ -3051,9 +3051,7 @@ textarea {
     margin: 0;
     min-width: 0;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     margin-bottom: 40px;
     flex: 50%;
@@ -3082,7 +3080,6 @@ textarea {
     margin-top: -10px;
     display: flex;
     flex-wrap: wrap;
-    -webkit-box-align: center;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -3224,3 +3221,21 @@ textarea {
 }
 /*# sourceMappingURL=style.css.map */
 
+@media screen and (max-width: 768px) {
+    .css-10z3mwn, .css-16u61eb {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .css-be8jlo {
+        font-size: 24px; /* smaller font size for smaller screens */
+    }
+
+    .css-1bng1jn, .css-jt5k18 {
+        flex: 100%; /* stack the image and text vertically on small screens */
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Add other styles here that should apply to mobile devices */
+}
