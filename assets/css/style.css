@@ -3320,8 +3320,8 @@ img {
 @media screen and (max-width: 768px) {
   .css-10z3mwn,
   .css-16u61eb {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
   }
 
   .css-be8jlo {
@@ -3334,6 +3334,23 @@ img {
     max-width: 100%;
     margin-bottom: 20px;
   }
+  @media screen and (max-width: 320px) {
+    .css-10z3mwn,
+    .css-16u61eb {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .css-be8jlo {
+      font-size: 24px; /* smaller font size for smaller screens */
+    }
+
+    .css-1bng1jn,
+    .css-jt5k18 {
+      flex: 100%; /* stack the image and text vertically on small screens */
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
 
   /* Add other styles here that should apply to mobile devices */
 }
@@ -3538,533 +3555,533 @@ img {
 
 
 #feature{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    box-sizing: border-box;
-    padding-top: 120px;
-    padding-bottom: 165px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  box-sizing: border-box;
+  padding-top: 120px;
+  padding-bottom: 165px;
 }
 .css-1w2x6qe{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 1410px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1410px;
 }
 
 .css-fjr8hv{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 540px;
-    margin-top: -5px;
-    margin-bottom: 80px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 540px;
+  margin-top: -5px;
+  margin-bottom: 80px;
 }
 
 .css-1kng7n8{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    font-family: "DM Sans", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    color: var(--theme-ui-colors-primary,#701f9c);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    opacity: 1;
-    letter-spacing: 2px;
-    font-size: 14px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  color: var(--theme-ui-colors-primary,#701f9c);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  opacity: 1;
+  letter-spacing: 2px;
+  font-size: 14px;
 }
 .css-zdc3pw{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    font-family: 'DM Sans',sans-serif;
-    color: var(--theme-ui-colors-heading,#0F2137);
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: -.5px;
-    line-height: 1.25;
-    font-size: 36px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-family: 'DM Sans',sans-serif;
+  color: var(--theme-ui-colors-heading,#0F2137);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -.5px;
+  line-height: 1.25;
+  font-size: 36px;
 }
 
 .css-1vt8nsp{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 55px 90px;  
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 55px 90px;
 }
 
 .css-152tnqx{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    display: flex;
-    -webkit-box-align: center;
-    flex-direction: column;
-    margin-bottom: -5px;
-    align-items: flex-start;
-    text-align: left;
-    padding-left: 0;
-    padding-right: 0;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  -webkit-box-align: center;
+  flex-direction: column;
+  margin-bottom: -5px;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .css-152tnqx{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    display: flex;
-    -webkit-box-align: center;
-    flex-direction: column;
-    margin-bottom: -5px;
-    align-items: flex-start;
-    text-align: left;
-    padding-left: 0;
-    padding-right: 0;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  -webkit-box-align: center;
+  flex-direction: column;
+  margin-bottom: -5px;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
 }
 .css-1sxqte2{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    max-width: 100%;
-    height: auto;
-    margin-left: -13px;
-    margin-right: 0;
-    width: auto; 
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  margin-left: -13px;
+  margin-right: 0;
+  width: auto;
 }
 
 .css-70evls{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 .css-sk9a8n{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    font-family: 'DM Sans',sans-serif;
-    letter-spacing: -.55px;
-    font-size: 32px;
-    color: var(--theme-ui-colors-heading_secondary,#0F2137);
-    line-height: 1.4;
-    font-weight: 700;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-family: 'DM Sans',sans-serif;
+  letter-spacing: -.55px;
+  font-size: 32px;
+  color: var(--theme-ui-colors-heading_secondary,#0F2137);
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 
 .css-30maei{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    font-family: 'DM Sans',sans-serif;
-    letter-spacing: -.55px;
-    font-size: 15px;
-    color: var(--theme-ui-colors-heading_secondary,#0F2137);
-    line-height: 1.4;
-    font-weight: 700;
-    margin-top: -5px;
-    margin-bottom: 25px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-family: 'DM Sans',sans-serif;
+  letter-spacing: -.55px;
+  font-size: 15px;
+  color: var(--theme-ui-colors-heading_secondary,#0F2137);
+  line-height: 1.4;
+  font-weight: 700;
+  margin-top: -5px;
+  margin-bottom: 25px;
 }
 .css-ijn0wt{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    margin-left: -30px;
-    margin-top: -10px;
-    width: 70px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  margin-left: -30px;
+  margin-top: -10px;
+  width: 70px;
 }
 .css-1igr4sz{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    margin-left: -30px;
-    width: 65px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  margin-left: -30px;
+  width: 65px;
 }
 
 
 .css-4380ty{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    display: flex;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    align-items: center;
-    border-radius: 30px;
-    background-color: #000000;
-    padding: 10px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #000000;
+  padding: 10px;
 }
 .css-1kfopif{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    margin-left: -35px;
-    width: 85px;  
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  margin-left: -35px;
+  width: 85px;
 }
 
 .css-hg6z6n{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    font-family: "DM Sans", sans-serif;
-    text-align: left;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    font-size: 10px;
-    font-weight: 600;
-    line-height: 1.2;
-    color: #ffffff;
-    padding-left: 50px;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+  padding-left: 50px;
 }
 .css-152tnqx{
-    --rem: 16;
-    --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
-    --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
-    --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
-    --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
-    --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
-    --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
-    --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
-    --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
-    --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
-    --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
-    --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
-    --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
-    color: var(--theme-ui-colors-text,#343D48);
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.8;
-    font-weight: normal;
-    box-sizing: border-box;
-    margin: 0;
-    min-width: 0;
-    display: flex;
-    -webkit-box-align: center;
-    flex-direction: column;
-    margin-bottom: -5px;
-    align-items: flex-start;
-    text-align: left;
-    padding-left: 0;
-    padding-right: 0;
+  --rem: 16;
+  --theme-ui-colors-text: var(--theme-ui-colors-text,#343D48);
+  --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary,#02073E);
+  --theme-ui-colors-heading: var(--theme-ui-colors-heading,#0F2137);
+  --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary,#0F2137);
+  --theme-ui-colors-background: var(--theme-ui-colors-background,#FFFFFF);
+  --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary,#F9FBFD);
+  --theme-ui-colors-border_color: var(--theme-ui-colors-border_color,#E5ECF4);
+  --theme-ui-colors-yellow: var(--theme-ui-colors-yellow,#FFA740);
+  --theme-ui-colors-primary: var(--theme-ui-colors-primary,#701f9c);
+  --theme-ui-colors-secondary: var(--theme-ui-colors-secondary,#2563FF);
+  --theme-ui-colors-muted: var(--theme-ui-colors-muted,#E4E4E4);
+  --theme-ui-colors-accent: var(--theme-ui-colors-accent,#609);
+  color: var(--theme-ui-colors-text,#343D48);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  display: flex;
+  -webkit-box-align: center;
+  flex-direction: column;
+  margin-bottom: -5px;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .css-16bqynm {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4083,18 +4100,18 @@ img {
 .css-1w2x6qe {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4120,18 +4137,18 @@ img {
 .css-fjr8hv {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4160,18 +4177,18 @@ img {
 .css-1kng7n8 {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4197,18 +4214,18 @@ img {
 .css-zdc3pw {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4231,18 +4248,18 @@ img {
 .css-stose3 {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4262,18 +4279,18 @@ img {
 .react-multi-carousel-list {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4292,18 +4309,18 @@ img {
   position: relative;
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4325,18 +4342,18 @@ img {
 .carousel-container {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4358,18 +4375,18 @@ img {
 .react-multi-carousel-track {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4399,18 +4416,18 @@ img {
 .react-multi-carousel-item {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4434,18 +4451,18 @@ img {
 .react-multi-carousel-item--active {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4467,18 +4484,18 @@ img {
 .css-10rwxvf {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4503,18 +4520,18 @@ img {
 .css-46ex9c {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4538,18 +4555,18 @@ img {
 .css-9taffg {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4573,18 +4590,18 @@ img {
 .css-1bot5uz {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4607,18 +4624,18 @@ img {
 .css-vurnku {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4640,18 +4657,18 @@ img {
 .css-1n5m0s {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4677,18 +4694,18 @@ img {
 .css-1ms615l {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4713,18 +4730,18 @@ img {
 .css-klbam9 {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4752,18 +4769,18 @@ img {
 .css-qsdd62 {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4788,18 +4805,18 @@ img {
 .css-1uri1ng {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4821,18 +4838,18 @@ img {
 .css-1dq6ihg {
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
   --theme-ui-colors-text_secondary: var(
-    --theme-ui-colors-text_secondary,
-    #02073e
+          --theme-ui-colors-text_secondary,
+          #02073e
   );
   --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
   --theme-ui-colors-heading_secondary: var(
-    --theme-ui-colors-heading_secondary,
-    #0f2137
+          --theme-ui-colors-heading_secondary,
+          #0f2137
   );
   --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
   --theme-ui-colors-background_secondary: var(
-    --theme-ui-colors-background_secondary,
-    #f9fbfd
+          --theme-ui-colors-background_secondary,
+          #f9fbfd
   );
   --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
   --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
@@ -4849,4 +4866,34 @@ img {
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .css-1vt8nsp {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+    grid-gap: 20px 40px; /* Reduce gap */
+  }
+.css-fjr8hv{
+  width: auto!important;
+}
+  .css-zdc3pw {
+    font-size: 28px; /* Smaller font for headings */
+    width: auto!important;
+    align-items: baseline!important;
+  }
+
+  .css-1kng7n8 {
+    font-size: 12px; /* Smaller font for subheadings */
+  }
+
+  .css-1sxqte2 {
+    width: 100%;
+    height: auto;
+  }
+
+  #feature {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  /* Add more customizations as needed */
 }
