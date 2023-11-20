@@ -5168,8 +5168,8 @@ img {
   background-color: var(--theme-ui-colors-primary, #701f9c);
   text-align: center;
   border-radius: 10px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .css-sk6np7 {
@@ -5295,7 +5295,7 @@ img {
   border-radius: 50px;
   padding: 5px;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .css-1fgxed9 {
