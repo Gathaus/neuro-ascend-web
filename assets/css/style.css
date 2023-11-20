@@ -965,6 +965,19 @@ img {
 }
 
 /* ******************************
+:: LOGO CSS
+****************************** */
+.logo-standard {
+  width: 60px;
+  height: auto;
+}
+
+.logo-footer {
+  width: 100px;
+  height: auto;
+}
+
+/* ******************************
 :: 7.0 HEADER AREA CSS
 ****************************** */
 @media (max-width: 991px) {
@@ -2798,6 +2811,16 @@ img {
 .height-emulator {
   float: left;
   height: 585px;
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-area .footer-items > .navbar-brand {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .footer-area .footer-items .social-icons > a {
