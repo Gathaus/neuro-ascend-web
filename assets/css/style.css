@@ -1413,25 +1413,20 @@ img {
 }
 
 .welcome-area .welcome-thumb {
-  max-width: 460px;
+  max-width: 300px;
   padding-top: 70px;
-  padding-left: 50px;
 }
 
 @media (max-width: 767px) {
   .welcome-area .welcome-thumb {
-    max-width: 350px;
+    max-width: 270px;
     padding-top: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 
 @media (max-width: 575px) {
   .welcome-area .welcome-thumb {
-    max-width: 300px;
-    padding-left: 0px;
-    padding-right: 0px;
+    max-width: 230px;
   }
 }
 
@@ -4037,6 +4032,19 @@ img {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .css-sk9a8n {
+    font-size: 26px;
+  }
+  /* .css-4380ty {
+    width: 50px;
+  } */
+
+  /* .css-hg6z6n {
+    padding-left: 30px;
+  } */
+}
+
 .css-30maei {
   --rem: 16;
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
@@ -4820,6 +4828,7 @@ img {
   max-width: 100%;
   height: auto;
   width: 100%;
+  padding-top: 65px;
 }
 
 .css-1bot5uz {
