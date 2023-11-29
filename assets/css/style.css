@@ -4032,6 +4032,19 @@ img {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .css-sk9a8n {
+    font-size: 26px;
+  }
+  /* .css-4380ty {
+    width: 50px;
+  } */
+
+  /* .css-hg6z6n {
+    padding-left: 30px;
+  } */
+}
+
 .css-30maei {
   --rem: 16;
   --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
