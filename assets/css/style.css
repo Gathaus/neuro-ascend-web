@@ -367,6 +367,8 @@ img {
   }
 }
 
+
+
 .section-heading > h2::after {
   position: absolute;
   content: "";
@@ -660,7 +662,7 @@ img {
   top: 0;
   left: 0;
   background: var(--primary-bg-color-2);
-  opacity: 0.94;
+  opacity: 0.80;
   z-index: -1;
 }
 
@@ -5513,5 +5515,32 @@ img {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
+  }
+}
+
+
+/* Küçük ekranlar için varsayılan padding değeri (mobil cihazlar) */
+.container-fluid {
+  padding-left: 5rem;
+  padding-right: 1rem;
+}
+.container-device-image{
+  /*padding-left: 0rem;*/
+  padding-right: 5rem!important;
+}
+
+/* Orta boy ekranlar için (tabletler) */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Büyük ekranlar için (masaüstü) */
+@media (max-width: 992px) {
+  .container-fluid {
+    padding-left: 3rem;
+    padding-right: 1rem;
   }
 }
