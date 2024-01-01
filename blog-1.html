@@ -21,6 +21,76 @@
 
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Custom CSS for adjusting heading font sizes */
+      .custom-h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      .custom-h2 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      /* Set font size and family for paragraphs and list items */
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+      .custom-list {
+        margin-bottom: 20px;
+        list-style: none; /* Remove default list styles */
+        padding-left: 0; /* Remove default left padding for the list */
+      }
+
+      /* Style list items */
+      .custom-list-item {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif;
+        position: relative; /* Set the position to relative for pseudo-elements */
+        padding-left: 25px; /* Add left padding for the bullet */
+      }
+
+      /* Style list bullets */
+      .custom-list-item::before {
+        content: "\2022"; /* Unicode character for a bullet point */
+        color: #701f9c; /* Adjust the color of the bullet point */
+        font-size: 20px; /* Set the font size of the bullet point */
+        position: absolute;
+        left: 0; /* Adjust the left position for alignment */
+        top: 50%; /* Center the bullet vertically */
+        transform: translateY(-50%);
+      }
+
+      .custom-navbar-font {
+        color: #444444 !important;
+      }
+
+      .custom-blog-section {
+        margin-top: 50px;
+      }
+
+      .custom-font-family {
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      @media screen and (max-width: 768px) {
+        .custom-blog-section {
+          margin-top: 50px;
+        }
+      }
+
+      .navbar-toggler-icon {
+        background-color: #444444 !important;
+      }
+    </style>
   </head>
 
   <body class="blog">
@@ -68,21 +138,39 @@
             <nav>
               <ul class="navbar-nav" id="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html" id="NavbarHome">
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html"
+                    id="NavbarHome"
+                  >
                     Home
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#feature">Features</a>
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html#feature"
+                    >Features</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#review">User Comments</a>
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html#review"
+                    >User Comments</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#blog">Blog</a>
+                  <a class="nav-link custom-navbar-font" href="index.html#blog"
+                    >Blog</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#subscribe">Subscribe</a>
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html#subscribe"
+                    >Subscribe</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -91,141 +179,148 @@
       </header>
       <!-- ***** Header End ***** -->
 
-      <!-- ***** Breadcrumb Area Start ***** -->
-      <section
-        class="section breadcrumb-area bg-overlay d-flex align-items-center"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <!-- Breamcrumb Content -->
-              <div class="breadcrumb-content text-center">
-                <h2 class="text-white text-capitalize">Our Blogs</h2>
-                <!-- <ol class="breadcrumb d-flex justify-content-center">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item">
-                    <a href="index.html">Blog Pages</a>
-                  </li>
-                  <li class="breadcrumb-item active">Blog - 2 Column</li>
-                </ol> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ***** Breadcrumb Area End ***** -->
-
       <!-- ***** Blog Area Start ***** -->
-      <section id="blog" class="section blog-area ptb_100">
+      <section id="blog" class="section custom-blog-section blog-area ptb_100">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <!-- Single Blog -->
-              <div class="single-blog res-margin">
-                <!-- Blog Thumb -->
-                <div class="blog-thumb">
-                  <a href="#"
-                    ><img
-                      src="assets/blog/alzheimer-info-blog-thumb.jpg"
-                      alt="Alzhimer's info"
-                  /></a>
-                </div>
-                <div class="css-1bot5uz">
-                  <a
-                    href="https://www.freepik.com/free-vector/alzheimer-concept-illustration_20064506.htm#query=alzheimer%20s%20disease&amp;position=4&amp;from_view=search&amp;track=ais"
-                    class="css-vurnku"
-                    >Image by storyset</a
+            <div class="col-12 align-items-center justify-content-center">
+              <!-- Blog Post Content -->
+              <article>
+                <div style="display: flex; justify-content: space-between">
+                  <span class="author custom-font-family">NeuroAscend.AI</span>
+                  <span
+                    style="align-self: flex-end"
+                    class="date custom-font-family"
+                    >May 23, 2023</span
                   >
-                  on Freepik
                 </div>
-                <!-- Blog Content -->
-                <div class="blog-content p-4">
-                  <!-- Meta Info -->
-                  <ul class="meta-info d-flex justify-content-between">
-                    <li>By <a href="#">NeuroAscend.AI</a></li>
-                    <li><a href="#">May 23, 2023</a></li>
-                  </ul>
-                  <!-- Blog Title -->
-                  <h3 class="blog-title my-3">
-                    <a href="#"
-                      >Understanding the Basics of Alzheimer’s Disease and
-                      Providing Support for Those Affected</a
-                    >
-                  </h3>
+                <hr />
+                <h2 class="mb-3 mt-3 custom-font-family">
+                  Understanding the Basics of Alzheimer’s Disease and Providing
+                  Support for Those Affected
+                </h2>
+                <br />
+                <br />
+
+                <div style="display: flex; flex-direction: column">
                   <p>
                     Millions of individuals throughout the world are afflicted
                     by the degenerative brain ailment known as Alzheimer’s
                     disease. One of the main causes of dementia, it is a
                     degenerative disorder that can lead to serious memory loss
-                    and cognitive impairment.
+                    and cognitive impairment. In this article, we’ll examine the
+                    fundamentals of Alzheimer’s disease and talk about how to
+                    help individuals who are afflicted.
                   </p>
-                  <a href="blog-1.html" class="blog-btn mt-3">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <!-- Single Blog -->
-              <div class="single-blog res-margin">
-                <!-- Blog Thumb -->
-                <div class="blog-thumb">
-                  <a href="#"
-                    ><img
-                      src="assets/blog/blog-thumb2.jpg"
-                      alt="Empowering Individuals with Alzheimer’s"
-                  /></a>
-                </div>
-                <div class="css-1bot5uz">
-                  <a
-                    href="https://www.freepik.com/free-vector/alzheimer-concept-illustration_19948569.htm#query=alzheimer%20s%20disease&amp;position=42&amp;from_view=search&amp;track=ais"
-                    class="css-vurnku"
-                    >Image by storyset</a
-                  >
-                  on Freepik
-                </div>
-                <!-- Blog Content -->
-                <div class="blog-content p-4">
-                  <!-- Meta Info -->
-                  <ul class="meta-info d-flex justify-content-between">
-                    <li>By <a href="#">NeuroAscend.AI</a></li>
-                    <li><a href="#">May 31, 2023</a></li>
-                  </ul>
-                  <!-- Blog Title -->
-                  <h3 class="blog-title my-3">
-                    <a href="#"
-                      >Empowering Individuals with Alzheimer’s: Enhancing
-                      Quality of Life and Caregiver Support</a
-                    >
-                  </h3>
+
+                  <h2 class="custom-h2">Learning about Alzheimer’s disease</h2>
+
                   <p>
-                    This article expands on our earlier investigation of
-                    Alzheimer’s disease by exploring the many facets of this
-                    neurological condition. We will talk about creative ideas,
-                    doable plans of action, and neighborhood resources that may
-                    dramatically improve the quality of life for those impacted
-                    by the condition.
+                    Although the precise etiology of Alzheimer’s disease is
+                    still unknown, research indicates that a number of genetic,
+                    environmental, and lifestyle variables may have a role in
+                    the illness’s progression. Usually affecting older persons,
+                    the condition’s symptoms start to show up in the 60s or 70s.
+                    However, individuals as young as their 20s can have
+                    early-onset Alzheimer’s disease.
                   </p>
-                  <a href="#" class="blog-btn mt-3">Read More</a>
+
+                  <p>
+                    The early stages of Alzheimer’s disease can be difficult to
+                    identify since the symptoms might be modest and sometimes go
+                    untreated. However, when the illness worsens, symptoms can
+                    greatly affect a person’s everyday life and grow more
+                    severe. These signs might consist of:
+                  </p>
+
+                  <ul class="custom-list">
+                    <li class="custom-list-item">
+                      Loss of memory, especially recent memories
+                    </li>
+                    <li class="custom-list-item">
+                      Difficulty creating plans, decisions, and addressing
+                      problems
+                    </li>
+                    <li class="custom-list-item">
+                      Confusion, especially in familiar circumstances, and
+                      disorientation
+                    </li>
+                    <li class="custom-list-item">
+                      Difficulties with language, such as having trouble
+                      understanding conversations or finding the correct words
+                    </li>
+                    <li class="custom-list-item">
+                      Mood and behavioral changes, such as heightened agitation,
+                      anxiety, and melancholy
+                    </li>
+                    <li class="custom-list-item">
+                      Loss of enthusiasm for hobbies and pursuits
+                    </li>
+                  </ul>
+
+                  <h2 class="custom-h2">
+                    Providing Assistance to Alzheimer’s Patients
+                  </h2>
+
+                  <p>
+                    You should consult a doctor as soon as you can if you or
+                    someone you know has been diagnosed with Alzheimer’s
+                    disease. The condition does not presently have a cure, but
+                    there are therapies that can help control symptoms and
+                    enhance quality of life.
+                  </p>
+
+                  <p>
+                    There are several methods to help persons impacted by
+                    Alzheimer’s disease in addition to medical care. These may
+                    consist of:
+                  </p>
+
+                  <ul class="custom-list">
+                    <li class="custom-list-item">
+                      Giving emotional support: Both the individual with the
+                      disease and their loved ones may experience difficulty and
+                      emotional strain as a result of Alzheimer’s. Regular
+                      visits, phone conversations, and other types of
+                      communication can be used to offer emotional support and
+                      make people feel less alone and isolated.
+                    </li>
+                    <li class="custom-list-item">
+                      Promoting cognitive stimulation: Brain-stimulating
+                      activities can assist to delay the deterioration of
+                      Alzheimer’s disease and enhance cognitive performance.
+                      Reading, solving puzzles, and other brain engaging
+                      pastimes may fall under this category.
+                    </li>
+                    <li class="custom-list-item">
+                      Safety: People with Alzheimer’s may become more vulnerable
+                      to accidents and injuries as the disease advances. Falls
+                      and other mishaps can be avoided by making the home
+                      environment safe and secure.
+                    </li>
+                    <li class="custom-list-item">
+                      Encouragement of good lifestyle choices: While there is no
+                      surefire strategy to ward off Alzheimer’s, regular
+                      exercise, a balanced diet, and stress reduction techniques
+                      can help to lower the risk.
+                    </li>
+                  </ul>
+
+                  <p>
+                    In conclusion, millions of individuals throughout the world
+                    are impacted by the difficult and sometimes fatal condition
+                    known as Alzheimer’s disease. Despite the fact that there is
+                    no cure at the moment, there are therapies that can help
+                    control symptoms and enhance quality of life. We can support
+                    people with Alzheimer’s disease and help them live their
+                    best lives by offering emotional support, fostering
+                    cognitive stimulation, assuring safety, and supporting good
+                    lifestyle choices.
+                  </p>
+
+                  <!-- Add more content here as needed -->
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <!-- Pagination -->
-              <ul class="pagination justify-content-center">
-                <li class="disabled px-1">
-                  <a href="#" aria-label="Previous">
-                    <i class="fas fa-arrow-left"></i>
-                  </a>
-                </li>
-                <li class="px-1"><a href="#">1</a></li>
-                <li class="active px-1"></li>
-                <li>
-                  <a href="#" aria-label="Next">
-                    <i class="fas fa-arrow-right"></i>
-                  </a>
-                </li>
-              </ul>
+              </article>
             </div>
           </div>
         </div>
