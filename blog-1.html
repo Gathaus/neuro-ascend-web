@@ -87,8 +87,18 @@
         }
       }
 
-      .navbar-toggler-icon {
-        background-color: #444444 !important;
+      @media (max-width: 991px) {
+        .navbar .navbar-toggler-icon {
+          background: #7e8085 !important;
+        }
+
+        .navbar .navbar-toggler-icon::before,
+        .navbar .navbar-toggler-icon::after {
+          background: #7e8085 !important;
+        }
+        .navbar-toggler-icon.active {
+          background: transparent !important;
+        }
       }
     </style>
   </head>
