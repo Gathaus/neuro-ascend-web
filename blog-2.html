@@ -81,10 +81,8 @@
         font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
       }
 
-      @media screen and (max-width: 768px) {
-        .custom-blog-section {
-          margin-top: 50px;
-        }
+      .custom-back-button:hover {
+        color: #7c4fe0;
       }
 
       @media (max-width: 991px) {
@@ -98,6 +96,9 @@
         }
         .navbar-toggler-icon.active {
           background: transparent !important;
+        }
+        .custom-back-button:hover {
+          color: #444444;
         }
       }
     </style>
@@ -194,6 +195,16 @@
       <!-- ***** Blog Area Start ***** -->
       <section id="blog" class="section custom-blog-section blog-area ptb_100">
         <div class="container">
+          <div class="row">
+            <a
+              class="mt-3 ml-3 mb-3 custom-back-button"
+              href="blog-two-column.html"
+              aria-label="All Blogs"
+            >
+              <i class="fas fa-arrow-left"></i>
+              <span class="ml-2 custom-font-family">All Blogs</span>
+            </a>
+          </div>
           <div class="row">
             <div class="col-12 align-items-center justify-content-center">
               <!-- Blog Post Content -->
