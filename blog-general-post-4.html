@@ -12,7 +12,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>NeuroAscend.AI | General Blog Library</title>
+    <title>NeuroAscend.AI | Blog</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="assets/logo/logo-1.png" />
@@ -21,6 +21,97 @@
 
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Custom CSS for adjusting heading font sizes */
+      .custom-h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      .custom-h2 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      /* Set font size and family for paragraphs and list items */
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+      .custom-list {
+        margin-bottom: 20px;
+        list-style: none; /* Remove default list styles */
+        padding-left: 0; /* Remove default left padding for the list */
+      }
+
+      /* Style list items */
+      .custom-list-item {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif;
+        position: relative; /* Set the position to relative for pseudo-elements */
+        padding-left: 25px; /* Add left padding for the bullet */
+      }
+
+      /* Style list bullets */
+      .custom-list-item::before {
+        content: "\2022"; /* Unicode character for a bullet point */
+        color: #701f9c; /* Adjust the color of the bullet point */
+        font-size: 20px; /* Set the font size of the bullet point */
+        position: absolute;
+        left: 0; /* Adjust the left position for alignment */
+        top: 50%; /* Center the bullet vertically */
+        transform: translateY(-50%);
+      }
+
+      .custom-navbar-font {
+        color: #444444 !important;
+      }
+
+      .custom-blog-section {
+        margin-top: 50px;
+      }
+
+      .custom-font-family {
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      .custom-back-button:hover {
+        color: #7c4fe0;
+      }
+      .custom-references-section {
+        margin-top: 50px;
+      }
+
+      .custom-references-font {
+        font-size: medium;
+      }
+      .custom-references-font > ol > li > p {
+        font-size: medium;
+      }
+
+      @media (max-width: 991px) {
+        .navbar .navbar-toggler-icon {
+          background: #7e8085 !important;
+        }
+
+        .navbar .navbar-toggler-icon::before,
+        .navbar .navbar-toggler-icon::after {
+          background: #7e8085 !important;
+        }
+        .navbar-toggler-icon.active {
+          background: transparent !important;
+        }
+        .custom-back-button:hover {
+          color: #444444;
+        }
+      }
+    </style>
   </head>
 
   <body class="blog">
@@ -68,55 +159,41 @@
             <nav>
               <ul class="navbar-nav" id="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html" id="NavbarHome">
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html"
+                    id="NavbarHome"
+                  >
                     Home
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#feature">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#review">User Comments</a>
-                </li>
-                <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
-                    href="javascript:;"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                    class="nav-link custom-navbar-font"
+                    href="index.html#feature"
+                    >Features</a
                   >
-                    Blog
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="blog-general.html"
-                        >General Library</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="blog-exercise.html"
-                        >Exercise Library</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="blog-activity.html"
-                        >Activity Library</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="blog-diet.html"
-                        >Diet Library</a
-                      >
-                    </li>
-                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html#subscribe">Subscribe</a>
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html#review"
+                    >User Comments</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="blog-two-column.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html#subscribe"
+                    >Subscribe</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -125,115 +202,54 @@
       </header>
       <!-- ***** Header End ***** -->
 
-      <!-- ***** Breadcrumb Area Start ***** -->
-      <section
-        class="section breadcrumb-area bg-overlay d-flex align-items-center"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <!-- Breamcrumb Content -->
-              <div class="breadcrumb-content text-center">
-                <h2 class="text-white text-capitalize">General Blog Library</h2>
-                <!-- <ol class="breadcrumb d-flex justify-content-center">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item">
-                    <a href="index.html">Blog Pages</a>
-                  </li>
-                  <li class="breadcrumb-item active">Blog - 2 Column</li>
-                </ol> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ***** Breadcrumb Area End ***** -->
-
       <!-- ***** Blog Area Start ***** -->
-      <section id="blog" class="section blog-area ptb_100">
+      <section id="blog" class="section custom-blog-section blog-area ptb_100">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6">
-              <!-- Single Blog -->
-              <div class="single-blog res-margin">
-                <!-- Blog Thumb -->
-                <div class="blog-thumb">
-                  <a href="#"
-                    ><img
-                      src="assets/blog/general/general-blog-post-3.jpeg"
-                      alt="Alzhimer's info"
-                  /></a>
-                </div>
-                <div class="css-1bot5uz">
-                  <a
-                    href="https://www.freepik.com/free-vector/brain-chemistry-concept-illustration_29018658.htm#query=alzheimer%20research&position=6&from_view=search&track=ais&uuid=b66a4fd0-5bf0-4e90-b80a-0d65583ef38f"
-                    class="css-vurnku"
-                    >Image by storyset</a
+            <a
+              class="mt-3 ml-3 mb-3 custom-back-button"
+              href="blog-general.html"
+              aria-label="General Library "
+            >
+              <i class="fas fa-arrow-left"></i>
+              <span class="ml-2 custom-font-family">General Library</span>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-12 align-items-center justify-content-center">
+              <!-- Blog Post Content -->
+              <article>
+                <div style="display: flex; justify-content: space-between">
+                  <span class="author custom-font-family">NeuroAscend.AI</span>
+                  <span
+                    style="align-self: flex-end"
+                    class="date custom-font-family"
+                    >Jan 15, 2024</span
                   >
-                  on Freepik
                 </div>
-                <!-- Blog Content -->
-                <div class="blog-content p-4">
-                  <!-- Meta Info -->
-                  <ul class="meta-info d-flex justify-content-between">
-                    <li>By <a href="#">NeuroAscend.AI</a></li>
-                    <li><a href="#">Jan 15, 2024</a></li>
-                  </ul>
-                  <!-- Blog Title -->
-                  <h3 class="blog-title my-3">
+                <hr />
+                <h2 class="mb-3 mt-3 custom-font-family">
+                  Navigating the Alzheimer's Challenge: A Holistic Perspective
+                </h2>
+                <br />
+                <br />
+
+                <div style="display: flex; flex-direction: column">
+                  <div class="blog-thumb p-4">
                     <a href="#"
-                      >Unveiling the Complexities of Alzheimer's Disease:
-                      Insights from Research Frameworks and Gender
-                      Disparities</a
+                      ><img
+                        src="assets/blog/general/general-blog-post-4.jpeg"
+                        alt="Alzhimer's info"
+                    /></a>
+                  </div>
+                  <div class="css-1bot5uz mt-2 mb-3">
+                    <a
+                      href="https://www.freepik.com/free-vector/alzheimer-symptoms-infographic-template_16688343.htm#query=define%20alzheimer%20early&position=9&from_view=search&track=ais&uuid=a62d069e-b541-453f-871e-72fc44858a4e"
+                      class="css-vurnku"
+                      >Freepik</a
                     >
-                  </h3>
-                  <p>
-                    Alzheimer's disease (AD) poses a significant challenge,
-                    being a progressive neurodegenerative disorder with no known
-                    cure. Recent research has delved into defining AD not just
-                    as a clinical entity but as a biological phenomenon. The
-                    NIA-AA Research Framework proposes a shift from syndromal to
-                    a biomarker-based definition of AD, aiming for targeted
-                    interventions grounded in biological understanding.
-                  </p>
-                  <a href="blog-general-post-3.html" class="blog-btn mt-3"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <!-- Single Blog -->
-              <div class="single-blog res-margin">
-                <!-- Blog Thumb -->
-                <div class="blog-thumb">
-                  <a href="#"
-                    ><img
-                      src="assets/blog/general/general-blog-post-4.jpeg"
-                      alt="Alzhimer's info"
-                  /></a>
-                </div>
-                <div class="css-1bot5uz">
-                  <a
-                    href="https://www.freepik.com/free-vector/alzheimer-symptoms-infographic-template_16688343.htm#query=define%20alzheimer%20early&position=9&from_view=search&track=ais&uuid=a62d069e-b541-453f-871e-72fc44858a4e"
-                    class="css-vurnku"
-                    >Freepik</a
-                  >
-                </div>
-                <!-- Blog Content -->
-                <div class="blog-content p-4">
-                  <!-- Meta Info -->
-                  <ul class="meta-info d-flex justify-content-between">
-                    <li>By <a href="#">NeuroAscend.AI</a></li>
-                    <li><a href="#">Jan 15, 2024</a></li>
-                  </ul>
-                  <!-- Blog Title -->
-                  <h3 class="blog-title my-3">
-                    <a href="#"
-                      >Navigating the Alzheimer's Challenge: A Holistic
-                      Perspective
-                    </a>
-                  </h3>
+                  </div>
+
                   <p>
                     Alzheimer's disease, an inexorable neurodegenerative force,
                     not only presents a medical challenge but also raises
@@ -241,121 +257,145 @@
                     quality of life amidst cognitive decline and the inexorable
                     march towards death. This ethical conundrum is accentuated
                     by the fact that those directly affected often struggle to
-                    express their preferences due to cognitive impairments.
+                    express their preferences due to cognitive impairments. The
+                    failure of healthcare professionals to recognize and adapt
+                    to these impairments further exacerbates the suffering of
+                    patients<sup>1</sup>.
                   </p>
-                  <a href="blog-general-post-4.html" class="blog-btn mt-3"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <!-- Single Blog -->
-              <div class="single-blog res-margin">
-                <!-- Blog Thumb -->
-                <div class="blog-thumb">
-                  <a href="#"
-                    ><img
-                      src="assets/blog/alzheimer-info-blog-thumb.jpg"
-                      alt="Alzhimer's info"
-                  /></a>
-                </div>
-                <div class="css-1bot5uz">
-                  <a
-                    href="https://www.freepik.com/free-vector/alzheimer-concept-illustration_20064506.htm#query=alzheimer%20s%20disease&amp;position=4&amp;from_view=search&amp;track=ais"
-                    class="css-vurnku"
-                    >Image by storyset</a
-                  >
-                  on Freepik
-                </div>
-                <!-- Blog Content -->
-                <div class="blog-content p-4">
-                  <!-- Meta Info -->
-                  <ul class="meta-info d-flex justify-content-between">
-                    <li>By <a href="#">NeuroAscend.AI</a></li>
-                    <li><a href="#">May 23, 2023</a></li>
-                  </ul>
-                  <!-- Blog Title -->
-                  <h3 class="blog-title my-3">
-                    <a href="#"
-                      >Understanding the Basics of Alzheimer’s Disease and
-                      Providing Support for Those Affected</a
-                    >
-                  </h3>
+
                   <p>
-                    Millions of individuals throughout the world are afflicted
-                    by the degenerative brain ailment known as Alzheimer’s
-                    disease. One of the main causes of dementia, it is a
-                    degenerative disorder that can lead to serious memory loss
-                    and cognitive impairment.
+                    Research illuminates the prevalence of decisional
+                    impairments among cognitively impaired elderly individuals,
+                    emphasizing that those with dementia or cognitive impairment
+                    are more likely to exhibit decisional incompetence compared
+                    to their counterparts. It is crucial to recognize that a
+                    diagnosis of dementia does not equate to incapacity, as
+                    there is significant variability in decision-making
+                    abilities among individuals with mild-to-moderate
+                    Alzheimer's disease<sup>2</sup>.
                   </p>
-                  <a href="blog-1.html" class="blog-btn mt-3">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <!-- Single Blog -->
-              <div class="single-blog res-margin">
-                <!-- Blog Thumb -->
-                <div class="blog-thumb">
-                  <a href="#"
-                    ><img
-                      src="assets/blog/blog-thumb2.jpg"
-                      alt="Empowering Individuals with Alzheimer’s"
-                  /></a>
-                </div>
-                <div class="css-1bot5uz">
-                  <a
-                    href="https://www.freepik.com/free-vector/alzheimer-concept-illustration_19948569.htm#query=alzheimer%20s%20disease&amp;position=42&amp;from_view=search&amp;track=ais"
-                    class="css-vurnku"
-                    >Image by storyset</a
-                  >
-                  on Freepik
-                </div>
-                <!-- Blog Content -->
-                <div class="blog-content p-4">
-                  <!-- Meta Info -->
-                  <ul class="meta-info d-flex justify-content-between">
-                    <li>By <a href="#">NeuroAscend.AI</a></li>
-                    <li><a href="#">May 31, 2023</a></li>
-                  </ul>
-                  <!-- Blog Title -->
-                  <h3 class="blog-title my-3">
-                    <a href="#"
-                      >Empowering Individuals with Alzheimer’s: Enhancing
-                      Quality of Life and Caregiver Support</a
-                    >
-                  </h3>
+
                   <p>
-                    This article expands on our earlier investigation of
-                    Alzheimer’s disease by exploring the many facets of this
-                    neurological condition. We will talk about creative ideas,
-                    doable plans of action, and neighborhood resources that may
-                    dramatically improve the quality of life for those impacted
-                    by the condition.
+                    Understanding the neuropsychological factors contributing to
+                    impaired decision-making is paramount for developing
+                    targeted interventions. Executive functions, which
+                    orchestrate complex, goal-directed behavior, emerge as
+                    pivotal in decisional abilities. This identification not
+                    only validates measures of decision-making but also opens
+                    avenues for enhancing decisional capacity through
+                    interventions<sup>2</sup>.
                   </p>
-                  <a href="blog-2.html" class="blog-btn mt-3">Read More</a>
+
+                  <p>
+                    Expanding the scope beyond clinical realms, decision-making
+                    capacity extends to long-term care, legal matters, and
+                    financial decisions. Professionals in finance and banking,
+                    positioned at the frontlines of screening for cognitive
+                    impairment, require standardized guidelines and training to
+                    identify and address impaired decision-making
+                    capacity<sup>1</sup>.
+                  </p>
+
+                  <p>
+                    The evolving landscape of Alzheimer's research calls for a
+                    reconsideration of how we define and address the disease.
+                    While endeavors to discover treatments for cognitive
+                    impairments progress, there is a call to expand the
+                    Alzheimer's label to encompass individuals who do not
+                    exhibit dementia but may still be at risk. Controversies are
+                    likely to arise concerning the value of early diagnosis and
+                    treatment, emphasizing the need for a nuanced
+                    approach<sup>1</sup>.
+                  </p>
+
+                  <p>
+                    As we navigate these complexities, a fundamental question
+                    emerges: How are we to live with Alzheimer's disease? This
+                    query necessitates a multifaceted approach, integrating not
+                    only medical interventions but also ethical considerations,
+                    professional training, and societal attitudes. Living with
+                    Alzheimer's is not just an individual's struggle; it's a
+                    collective challenge that requires a comprehensive and
+                    compassionate response from healthcare systems,
+                    professionals, and society at large<sup>2, 3</sup>.
+                  </p>
+
+                  <br />
+                  <hr />
+
+                  <div
+                    class="mt-3 custom-references-section custom-font-family custom-references-font"
+                  >
+                    <h3>References</h3>
+                    <ol>
+                      <li>
+                        <p>
+                          [1] Kramer, P. L., Xu, H., Woltjer, R. L., Westaway,
+                          S. K., Clark, D., Erten-Lyons, D., Kaye, J. A.,
+                          Welsh-Bohmer, K. A., Troncoso, J. C., Markesbery, W.
+                          R., Petersen, R. C., Turner, R. S., Kukull, W. A.,
+                          Bennett, D. A., Galasko, D., Morris, J. C., & Ott, J.
+                          (2011).
+                          <i
+                            >Alzheimer disease pathology in cognitively healthy
+                            elderly: a genome-wide study.</i
+                          >
+                          Neurobiology of aging, 32(12), 2113–2122.
+                          <a
+                            href="https://doi.org/10.1016/j.neurobiolaging.2010.01.010"
+                            target="_blank"
+                            >https://doi.org/10.1016/j.neurobiolaging.2010.01.010</a
+                          >
+                        </p>
+                        <p>
+                          <a
+                            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990809/"
+                            target="_blank"
+                            >Full Article</a
+                          >
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          [2] Kim, S. Y., Karlawish, J. H., & Caine, E. D.
+                          (2002).
+                          <i
+                            >Current state of research on decision-making
+                            competence of cognitively impaired elderly
+                            persons.</i
+                          >
+                          The American journal of geriatric psychiatry, 10(2),
+                          151-165.
+                          <a
+                            href="https://www.sciencedirect.com/science/article/abs/pii/S1064748112613402"
+                            target="_blank"
+                            >https://www.sciencedirect.com/science/article/abs/pii/S1064748112613402</a
+                          >
+                        </p>
+                      </li>
+
+                      <li>
+                        <p>
+                          [3] Karlawish, J. (2014).
+                          <i
+                            >How are we going to live with Alzheimer’s
+                            disease?</i
+                          >
+                          Health Affairs, 33(4), 541-546.
+                          <a
+                            href="https://www.healthaffairs.org/doi/abs/10.1377/hlthaff.2014.0089"
+                            target="_blank"
+                            >https://www.healthaffairs.org/doi/abs/10.1377/hlthaff.2014.0089</a
+                          >
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <!-- Add more content here as needed -->
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <!-- Pagination -->
-              <ul class="pagination justify-content-center">
-                <li class="disabled px-1">
-                  <a href="#" aria-label="Previous">
-                    <i class="fas fa-arrow-left"></i>
-                  </a>
-                </li>
-                <li class="px-1"><a href="#">1</a></li>
-                <li class="active px-1"></li>
-                <li>
-                  <a href="#" aria-label="Next">
-                    <i class="fas fa-arrow-right"></i>
-                  </a>
-                </li>
-              </ul>
+              </article>
             </div>
           </div>
         </div>
