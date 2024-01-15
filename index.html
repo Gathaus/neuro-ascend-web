@@ -21,6 +21,34 @@
 
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <!-- Assuming slick.css is in the assets/vendor directory -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/slick.css">
+
+
+    
+  <style>
+    /* Custom styles to ensure previous and next buttons are displayed inline */
+    .slick-prev, .slick-next {
+      top: 50%; /* Position at the vertical center */
+      transform: translateY(-50%);
+      font-size: 1.5em; /* Adjust font size as needed */
+      background-color: #fff; /* Button background color */
+      color: #333; /* Button text color */
+      border: 1px solid #ccc; /* Button border color */
+      padding: 5px 10px; /* Padding around the button */
+      border-radius: 5px; /* Button border radius */
+    }
+
+    .slick-prev {
+      left: 10px; /* Position previous button to the left */
+    }
+
+    .slick-next {
+      right: 10px; /* Position next button to the right */
+    }
+  </style>
+
 </head>
 
 <body>
@@ -939,54 +967,196 @@
         <div class="section-heading text-center">
             <h2>Discover our articles about Alzheimer's disease</h2>
           </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <!-- Single Blog -->
-              <div class="single-blog res-margin">
-                <!-- Blog Thumb -->
-                <div class="blog-thumb">
-                  <a href="#"
-                    ><img
-                      src="assets/blog/alzheimer-info-blog-thumb.jpg"
-                      alt="Alzhimer's info"
-                  /></a>
+
+           <!-- Your card elements go here -->
+           <div class="container">
+            <div class="slider">
+
+
+                <!-- First card -->
+                <div class="col-12 col-md-6">
+                  <!-- Single Blog -->
+                  <div class="single-blog res-margin">
+                    <!-- Blog Thumb -->
+                    <div class="blog-thumb">
+                      <a href="#">
+                        <img src="assets/blog/general/general-blog-post-3.jpeg" alt="Alzheimer's info">
+                      </a>
+                    </div>
+                    <div class="css-1bot5uz">
+                      <a href="https://www.freepik.com/free-vector/brain-chemistry-concept-illustration_29018658.htm#query=alzheimer%20research&position=6&from_view=search&track=ais&uuid=b66a4fd0-5bf0-4e90-b80a-0d65583ef38f" class="css-vurnku">Image by storyset</a>
+                      on Freepik
+                    </div>
+                    <!-- Blog Content -->
+                    <div class="blog-content p-4">
+                      <!-- Meta Info -->
+                      <ul class="meta-info d-flex justify-content-between">
+                        <li>By <a href="#">NeuroAscend.AI</a></li>
+                        <li><a href="#">Jan 15, 2024</a></li>
+                      </ul>
+                      <!-- Blog Title -->
+                      <h3 class="blog-title my-3">
+                        <a href="#">Unveiling the Complexities of Alzheimer's Disease: Insights from Research Frameworks and Gender Disparities</a>
+                      </h3>
+                      <p>
+                        Alzheimer's disease (AD) poses a significant challenge, being a progressive neurodegenerative disorder with no known cure. Recent research has delved into defining AD not just as a clinical entity but as a biological phenomenon. The NIA-AA Research Framework proposes a shift from syndromal to a biomarker-based definition of AD, aiming for targeted interventions grounded in biological understanding.
+                      </p>
+                      <a href="blog-general-post-3.html" class="blog-btn mt-3">Read More</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="css-1bot5uz">
-                  <a
-                    href="https://www.freepik.com/free-vector/alzheimer-concept-illustration_20064506.htm#query=alzheimer%20s%20disease&amp;position=4&amp;from_view=search&amp;track=ais"
-                    class="css-vurnku"
-                    >Image by storyset</a
-                  >
-                  on Freepik
-                </div>
-                <!-- Blog Content -->
-                <div class="blog-content p-4">
-                  <!-- Meta Info -->
-                  <ul class="meta-info d-flex justify-content-between">
-                    <li>By <a href="#">NeuroAscend.AI</a></li>
-                    <li><a href="#">May 23, 2023</a></li>
-                  </ul>
-                  <!-- Blog Title -->
-                  <h3 class="blog-title my-3">
-                    <a href="#"
-                      >Understanding the Basics of Alzheimer’s Disease and
-                      Providing Support for Those Affected</a
-                    >
-                  </h3>
-                  <p>
-                    Millions of individuals throughout the world are afflicted
-                    by the degenerative brain ailment known as Alzheimer’s
-                    disease. One of the main causes of dementia, it is a
-                    degenerative disorder that can lead to serious memory loss
-                    and cognitive impairment.
-                  </p>
-                  <a href="blog-1.html" class="blog-btn mt-3">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <!-- Single Blog -->
+                <div class="col-12 col-md-6">
+                    <!-- Single Blog -->
+                    <div class="single-blog res-margin">
+                      <!-- Blog Thumb -->
+                      <div class="blog-thumb">
+                        <a href="#"
+                          ><img
+                            src="assets/blog/general/general-blog-post-4.jpeg"
+                            alt="Alzhimer's info"
+                        /></a>
+                      </div>
+                      <div class="css-1bot5uz">
+                        <a
+                          href="https://www.freepik.com/free-vector/alzheimer-symptoms-infographic-template_16688343.htm#query=define%20alzheimer%20early&position=9&from_view=search&track=ais&uuid=a62d069e-b541-453f-871e-72fc44858a4e"
+                          class="css-vurnku"
+                          >Freepik</a
+                        >
+                      </div>
+                      <!-- Blog Content -->
+                      <div class="blog-content p-4">
+                        <!-- Meta Info -->
+                        <ul class="meta-info d-flex justify-content-between">
+                          <li>By <a href="#">NeuroAscend.AI</a></li>
+                          <li><a href="#">Jan 15, 2024</a></li>
+                        </ul>
+                        <!-- Blog Title -->
+                        <h3 class="blog-title my-3">
+                          <a href="#"
+                            >Navigating the Alzheimer's Challenge: A Holistic
+                            Perspective
+                          </a>
+                        </h3>
+                        <p>
+                          Alzheimer's disease, an inexorable neurodegenerative force,
+                          not only presents a medical challenge but also raises
+                          profound ethical questions about maintaining dignity and
+                          quality of life amidst cognitive decline and the inexorable
+                          march towards death. This ethical conundrum is accentuated
+                          by the fact that those directly affected often struggle to
+                          express their preferences due to cognitive impairments.
+                        </p>
+                        <a href="blog-general-post-4.html" class="blog-btn mt-3"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <!-- Single Blog -->
+                    <div class="single-blog res-margin">
+                      <!-- Blog Thumb -->
+                      <div class="blog-thumb">
+                        <a href="#"
+                          ><img
+                            src="assets/blog/activity/activity-blog-post-1-thumb.jpeg"
+                            alt="Alzhimer's info"
+                        /></a>
+                      </div>
+                      <div class="css-1bot5uz">
+                        <a
+                          href="https://www.freepik.com/free-vector/brain-organ-concept-illustration_33756689.htm#page=2&position=5&from_view=author&uuid=72dd067c-1be3-4902-82fd-1636ec5adb1f"
+                          class="css-vurnku"
+                          >Image by storyset</a
+                        >
+                        on Freepik
+                      </div>
+                      <!-- Blog Content -->
+                      <div class="blog-content p-4">
+                        <!-- Meta Info -->
+                        <ul class="meta-info d-flex justify-content-between">
+                          <li>By <a href="#">NeuroAscend.AI</a></li>
+                          <li><a href="#">Jan 15, 2024</a></li>
+                        </ul>
+                        <!-- Blog Title -->
+                        <h3 class="blog-title my-3">
+                          <a href="#"
+                            >Cognitive Enrichment: Unveiling the Power of Intelligence
+                            Activities in Alzheimer's Care and Well-being</a
+                          >
+                        </h3>
+                        <p>
+                          Unlock a world of meaningful engagement and intellectual
+                          stimulation with Intelligence Activities. Take a proactive
+                          step towards maintaining cognitive function and enjoying a
+                          fulfilling lifestyle, uniquely catered to your Alzheimer's
+                          level. Embarking on a journey into the world of cognition
+                          and leisure activities! Our meta-analysis uncovered a
+                          profound link between engaging in leisure activities and a
+                          reduced risk of Age-Related Cognitive Decline (ACD),
+                          including Alzheimer's Disease (AD) and Vascular Dementia
+                          (VD).
+                        </p>
+                        <a href="blog-activity-post-1.html" class="blog-btn mt-3"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <!-- Single Blog -->
+                    <div class="single-blog res-margin">
+                      <!-- Blog Thumb -->
+                      <div class="blog-thumb">
+                        <a href="#"
+                          ><img
+                            src="assets/blog/diet/diet-blog-post-1-thumb.jpeg"
+                            alt="Alzhimer's info"
+                        /></a>
+                      </div>
+                      <div class="css-1bot5uz">
+                        <a
+                          href="https://www.freepik.com/free-vector/illustration-healthy-seniors_3133052.htm#query=elderly%20diet%20cartoon&position=13&from_view=search&track=ais&uuid=e4df53b1-dee9-4104-b3f0-0f254f8e2d7b"
+                          class="css-vurnku"
+                          >Image by rawpixel.com</a
+                        >
+                        on Freepik
+                      </div>
+                      <!-- Blog Content -->
+                      <div class="blog-content p-4">
+                        <!-- Meta Info -->
+                        <ul class="meta-info d-flex justify-content-between">
+                          <li>By <a href="#">NeuroAscend.AI</a></li>
+                          <li><a href="#">Jan 15, 2024</a></li>
+                        </ul>
+                        <!-- Blog Title -->
+                        <h3 class="blog-title my-3">
+                          <a href="#"
+                            >Navigating the Nutritional Maze: Unraveling the Complex
+                            Relationship Between Diet, Lifestyle, and Cognitive
+                            Well-being in Alzheimer's Disease</a
+                          >
+                        </h3>
+                        <p>
+                          Embark on a journey through the intricate relationship
+                          between nutrition and cognitive well-being in the context of
+                          Alzheimer's disease (AD) As the aging population grapples
+                          with dementia, our commitment to understanding the vital
+                          connection between lifestyle and cognitive health becomes
+                          paramount. Explore the world beyond macronutrients, where
+                          nutrients with neuroprotective and antioxidant properties
+                          play a pivotal role in preventing and treating AD.
+                        </p>
+                        <a href="blog-diet-post-1.html" class="blog-btn mt-3"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+            
+                <!-- Second card -->
+                <div class="col-12 col-md-6">
+                 <!-- Single Blog -->
               <div class="single-blog res-margin">
                 <!-- Blog Thumb -->
                 <div class="blog-thumb">
@@ -1029,9 +1199,64 @@
                   <a href="blog-2.html" class="blog-btn mt-3">Read More</a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+                </div>
+            
+                <!-- Third card -->
+                <div class="col-12 col-md-6">
+                    <!-- Single Blog -->
+                    <div class="single-blog res-margin">
+                      <!-- Blog Thumb -->
+                      <div class="blog-thumb">
+                        <a href="#"
+                          ><img
+                            src="assets/blog/alzheimer-info-blog-thumb.jpg"
+                            alt="Alzhimer's info"
+                        /></a>
+                      </div>
+                      <div class="css-1bot5uz">
+                        <a
+                          href="https://www.freepik.com/free-vector/alzheimer-concept-illustration_20064506.htm#query=alzheimer%20s%20disease&amp;position=4&amp;from_view=search&amp;track=ais"
+                          class="css-vurnku"
+                          >Image by storyset</a
+                        >
+                        on Freepik
+                      </div>
+                      <!-- Blog Content -->
+                      <div class="blog-content p-4">
+                        <!-- Meta Info -->
+                        <ul class="meta-info d-flex justify-content-between">
+                          <li>By <a href="#">NeuroAscend.AI</a></li>
+                          <li><a href="#">May 23, 2023</a></li>
+                        </ul>
+                        <!-- Blog Title -->
+                        <h3 class="blog-title my-3">
+                          <a href="#"
+                            >Understanding the Basics of Alzheimer’s Disease and
+                            Providing Support for Those Affected</a
+                          >
+                        </h3>
+                        <p>
+                          Millions of individuals throughout the world are afflicted
+                          by the degenerative brain ailment known as Alzheimer’s
+                          disease. One of the main causes of dementia, it is a
+                          degenerative disorder that can lead to serious memory loss
+                          and cognitive impairment.
+                        </p>
+                        <a href="blog-1.html" class="blog-btn mt-3">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+            
+                <!-- Add more cards as needed -->
+
+            
+                <!-- Add more cards as needed -->
+              </div>
+            
+           </div>
+ 
+
+
       </section>
       <!-- ***** Blog Area End ***** -->
           <!-- ***** Supporter Area Start ***** -->
@@ -1220,6 +1445,28 @@
 
 <!-- Active js -->
 <script src="assets/js/active.js"></script>
+
+<script>
+  $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 2, // Display three cards at the same time
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: false,
+        prevArrow: '',
+        nextArrow: '',
+        responsive: [
+          {
+            breakpoint: 768, // Breakpoint for smaller screens
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 
 <!-- Mirrored from theme-land.com/sapp/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Nov 2023 19:53:53 GMT -->
