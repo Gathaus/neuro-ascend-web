@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <!-- Mirrored from theme-land.com/sapp/demo/blog-two-column.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Nov 2023 19:54:02 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>NeuroAscend.AI | Blog</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/logo/logo-1.png" />
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Custom CSS for adjusting heading font sizes */
+      .custom-h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      .custom-h2 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      /* Set font size and family for paragraphs and list items */
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+      .custom-list {
+        margin-bottom: 20px;
+        list-style: none; /* Remove default list styles */
+        padding-left: 0; /* Remove default left padding for the list */
+      }
+
+      /* Style list items */
+      .custom-list-item {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif;
+        position: relative; /* Set the position to relative for pseudo-elements */
+        padding-left: 25px; /* Add left padding for the bullet */
+      }
+
+      /* Style list bullets */
+      .custom-list-item::before {
+        content: "\2022"; /* Unicode character for a bullet point */
+        color: #701f9c; /* Adjust the color of the bullet point */
+        font-size: 20px; /* Set the font size of the bullet point */
+        position: absolute;
+        left: 0; /* Adjust the left position for alignment */
+        top: 50%; /* Center the bullet vertically */
+        transform: translateY(-50%);
+      }
+
+      .custom-navbar-font {
+        color: #444444 !important;
+      }
+
+      .custom-blog-section {
+        margin-top: 50px;
+      }
+
+      .custom-font-family {
+        font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
+      }
+
+      .custom-back-button:hover {
+        color: #7c4fe0;
+      }
+      .custom-references-section {
+        margin-top: 50px;
+      }
+
+      .custom-references-font {
+        font-size: medium;
+      }
+      .custom-references-font > ol > li > p {
+        font-size: medium;
+      }
+
+      @media (max-width: 991px) {
+        .navbar .navbar-toggler-icon {
+          background: #7e8085 !important;
+        }
+
+        .navbar .navbar-toggler-icon::before,
+        .navbar .navbar-toggler-icon::after {
+          background: #7e8085 !important;
+        }
+        .navbar-toggler-icon.active {
+          background: transparent !important;
+        }
+        .custom-back-button:hover {
+          color: #444444;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="blog">
+    <!--====== Scroll To Top Area Start ======-->
+    <div id="scrollUp" title="Scroll To Top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    <!--====== Scroll To Top Area End ======-->
+
+    <div class="main">
+      <!-- ***** Header Start ***** -->
+      <header class="navbar navbar-sticky navbar-expand-lg navbar-dark">
+        <div class="container position-relative">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="navbar-brand-regular logo-standard"
+              src="assets/logo/logo-1.png"
+              alt="brand-logo"
+            />
+            <img
+              class="navbar-brand-sticky logo-standard"
+              src="assets/logo/logo-1.png"
+              alt="sticky brand-logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-toggle="navbarToggler"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-inner">
+            <!--  Mobile Menu Toggler -->
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-toggle="navbarToggler"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav>
+              <ul class="navbar-nav" id="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html"
+                    id="NavbarHome"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html#feature"
+                    >Features</a
+                  >
+                </li>
+                <!-- <li class="nav-item">
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html#review"
+                    >User Comments</a
+                  >
+                </li> -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle custom-navbar-font"
+                    href="javascript:;"
+                    id="navbarDropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="blog-general.html"
+                        >General Library</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog-exercise.html"
+                        >Exercise Library</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog-activity.html"
+                        >Activity Library</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="blog-diet.html"
+                        >Diet Library</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-navbar-font"
+                    href="index.html#subscribe"
+                    >Subscribe</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- ***** Header End ***** -->
+
+      <!-- ***** Blog Area Start ***** -->
+      <section id="blog" class="section custom-blog-section blog-area ptb_100">
+        <div class="container">
+          <div class="row">
+            <a
+              class="mt-3 ml-3 mb-3 custom-back-button"
+              href="blog-exercise.html"
+              aria-label="Exercise Library "
+            >
+              <i class="fas fa-arrow-left"></i>
+              <span class="ml-2 custom-font-family">Exercise Library</span>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-12 align-items-center justify-content-center">
+              <!-- Blog Post Content -->
+              <article>
+                <div style="display: flex; justify-content: space-between">
+                  <span class="author custom-font-family">NeuroAscend.AI</span>
+                  <span
+                    style="align-self: flex-end"
+                    class="date custom-font-family"
+                    >Feb 25, 2024</span
+                  >
+                </div>
+                <hr />
+                <h2 class="mb-3 mt-3 custom-font-family">
+                  Understanding BMI, Physical Activity, and Dementia Progression
+                </h2>
+                <br />
+                <br />
+
+                <div style="display: flex; flex-direction: column">
+                  <div class="blog-thumb p-4" style="text-align: center">
+                    <a href="#">
+                      <img
+                        src="assets/blog/exercise/exercise-blog-post-2-thumb.jpg"
+                        alt="Alzheimer's info"
+                        style="display: inline-block"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="css-1bot5uz mt-2 mb-3">
+                    Image by
+                    <a
+                      href="https://unsplash.com/@yulissatagle?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                      class="css-vurnku"
+                      >Yulissa Tagle</a
+                    >
+                    on
+                    <a
+                      href="https://unsplash.com/photos/person-holding-pink-and-white-dumbbells-lB6lbkbe1XA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                      class="css-vurnku"
+                      >Unsplash</a
+                    >
+                  </div>
+                  <p>
+                    Dementia affects more than 5 million Americans aged 65 and
+                    older, with this number expected to triple by 2050. Growing
+                    evidence suggests that cardiovascular risk factors (such as
+                    overweight or obesity, high cholesterol, hypertension, and
+                    diabetes) are significant risk factors for dementia.
+                    However, the mechanism behind the association between high
+                    adiposity and dementia risk remains uncertain. While some
+                    studies have shown an association between higher weight or
+                    body mass index (BMI) at age 50 and dementia risk, others
+                    have observed an inverse relationship in individuals aged 65
+                    and older, termed the 'obesity paradox' in the literature.
+                    The clinical progression of dementia involves progressive
+                    decline in cognitive and functional abilities, along with
+                    various behavioral symptoms across the disease spectrum.
+                    This aims to longitudinally evaluate the relationship
+                    between dementia's clinical progression and BMI, aiming to
+                    fill an important gap in the literature. The results
+                    indicate that higher BMI in older age is associated with
+                    slower progression of functional or cognitive decline.
+                    <a href="#ref1">[1]</a>
+                  </p>
+                  <p>
+                    The prevalence of overweight and obesity among adults has
+                    surged in recent decades, accompanied by a mounting body of
+                    evidence linking higher body weight or BMI to increased
+                    mortality and various medical conditions. While the
+                    regulation of body weight is intricate, engaging in physical
+                    activity (PA) generally correlates with reduced body weight
+                    or fat in younger and middle-aged adults. Conversely, among
+                    older adults, rapid weight loss may lead to adverse health
+                    outcomes, including cognitive impairment. Conflicting
+                    findings on the association between BMI and cognitive
+                    decline have been reported, highlighting the complexity of
+                    this relationship. Limited research has investigated the
+                    connection between PA and BMI in older adults, yielding
+                    inconsistent results. Our study aimed to explore the
+                    longitudinal associations between PA and BMI trajectories in
+                    community-dwelling individuals aged 50 and above. Utilizing
+                    data from the Mayo Clinic Study of Aging, we observed that
+                    PA, particularly moderate-vigorous intensity, was associated
+                    with a slower decline in BMI over time among older adults.
+                    These findings underscore the importance of promoting a
+                    healthy lifestyle, including regular PA, to mitigate
+                    unhealthy weight loss in older age and advocate for its
+                    integration into clinical practice.
+                    <a href="#ref2">[2]</a>
+                  </p>
+
+                  <br />
+                  <hr />
+
+                  <div
+                    class="mt-3 custom-references-section custom-font-family custom-references-font"
+                  >
+                    <h3>References</h3>
+                    <ol>
+                      <li id="ref1">
+                        <p>
+                          [1] Michaud, T. L., Siahpush, M., Farazi, P. A., Kim,
+                          J., Yu, F., Su, D., & Murman, D. L. (2018). The
+                          association between body mass index, and cognitive,
+                          functional, and behavioral declines for incident
+                          dementia.
+                          <em
+                            >Journal of Alzheimer’s Disease, 66(4),
+                            1507–1517.</em
+                          >
+                          <a href="https://doi.org/10.3233/jad-180278"
+                            >https://doi.org/10.3233/jad-180278</a
+                          >
+                        </p>
+                      </li>
+                      <li id="ref2">
+                        <p>
+                          [2] Cleven, L., Syrjanen, J., Geda, Y. E.,
+                          Christenson, L. R., Petersen, R. C., Vassilaki, M.,
+                          Wöll, A., & Krell‐Roesch, J. (2023). Association
+                          between physical activity and longitudinal change in
+                          body mass index in middle-aged and older adults.
+                          <em>BMC Public Health, 23(1).</em>
+                          <a href="https://doi.org/10.1186/s12889-023-15119-7"
+                            >https://doi.org/10.1186/s12889-023-15119-7</a
+                          >
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <!-- Add more content here as needed -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***** Blog Area End ***** -->
+
+      <!--====== Footer Area Start ======-->
+      <footer class="footer-area bg-gray">
+        <!-- Footer Top -->
+        <div class="footer-top ptb_100">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-6 col-lg-3">
+                <!-- Footer Items -->
+                <div class="footer-items">
+                  <!-- Logo -->
+                  <a class="navbar-brand" href="#">
+                    <img
+                      class="logo-footer"
+                      src="assets/logo/logo-1.png"
+                      alt=""
+                    />
+                  </a>
+                  <!-- <p class="mt-2 mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Quis non, fugit totam vel laboriosam vitae.
+                            </p> -->
+                  <!-- Social Icons -->
+                  <div class="social-icons d-flex">
+                    <a
+                      href="https://www.linkedin.com/company/neuroascend-ai/mycompany/"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                          svg {
+                            fill: #701f9c;
+                          }
+                        </style>
+                        <path
+                          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                          svg {
+                            fill: #701f9c;
+                          }
+                        </style>
+                        <path
+                          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/neuroascendai/?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                          svg {
+                            fill: #701f9c;
+                          }
+                        </style>
+                        <path
+                          d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="1em"
+                        viewBox="0 0 448 512"
+                      >
+                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <style>
+                          svg {
+                            fill: #701f9c;
+                          }
+                        </style>
+                        <path
+                          d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <!-- Footer Items -->
+                <div class="footer-items">
+                  <!-- Footer Title -->
+                  <h3 class="footer-title mb-2">Useful Links</h3>
+                  <ul>
+                    <li class="py-2"><a href="index.html#home">Home</a></li>
+                    <li class="py-2">
+                      <a href="index.html#features">Features</a>
+                    </li>
+                    <!-- <li class="py-2">
+                      <a href="index.html#review">User Comments</a>
+                    </li> -->
+                    <li class="py-2">
+                      <a href="index.html#blog">Blog</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="index.html#subscribe">Subscribe</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <!-- Copyright Area -->
+                <div
+                  class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4"
+                >
+                  <!-- Copyright Left -->
+                  <div class="copyright-left">
+                    &copy; Copyright by 2023 NeuroAscend.AI, Inc
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--====== Footer Area End ======-->
+    </div>
+
+    <!-- ***** All jQuery Plugins ***** -->
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
+    <script src="assets/js/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Plugins js -->
+    <script src="assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Active js -->
+    <script src="assets/js/active.js"></script>
+  </body>
+
+  <!-- Mirrored from theme-land.com/sapp/demo/blog-two-column.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Nov 2023 19:54:03 GMT -->
+</html>
