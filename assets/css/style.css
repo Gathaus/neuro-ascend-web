@@ -367,8 +367,6 @@ img {
   }
 }
 
-
-
 .section-heading > h2::after {
   position: absolute;
   content: "";
@@ -662,7 +660,7 @@ img {
   top: 0;
   left: 0;
   background: var(--primary-bg-color-2);
-  opacity: 0.80;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -1415,20 +1413,20 @@ img {
 }
 
 .welcome-area .welcome-thumb {
-  max-width: 300px;
-  padding-top: 70px;
+  max-width: 420px;
+  padding-top: 50px;
 }
 
 @media (max-width: 767px) {
   .welcome-area .welcome-thumb {
-    max-width: 270px;
+    max-width: 350px;
     padding-top: 20px;
   }
 }
 
 @media (max-width: 575px) {
   .welcome-area .welcome-thumb {
-    max-width: 230px;
+    max-width: 300px;
   }
 }
 
@@ -5518,15 +5516,14 @@ img {
   }
 }
 
-
 /* Küçük ekranlar için varsayılan padding değeri (mobil cihazlar) */
 .container-fluid {
   padding-left: 5rem;
   padding-right: 1rem;
 }
-.container-device-image{
+.container-device-image {
   /*padding-left: 0rem;*/
-  padding-right: 5rem!important;
+  padding-right: 5rem !important;
 }
 
 /* Orta boy ekranlar için (tabletler) */
