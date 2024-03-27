@@ -75,7 +75,7 @@
       width: 100%;
       
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 55px 90px;
+      grid-gap: 20px 20px;
     }
 
     @media (max-width: 1024px) {
@@ -104,17 +104,29 @@
     }
 
     .feature-area-card img {
-      width: 100px;
-      height: 100px;
+      /* width: 100px;
+      height: 100px; */
       object-fit: cover;
       border-radius: 50%;
     }
-
-    .feature-area-card h2 {
+    .feature-area-card .feature-area-card-title {
       margin-top: 10px;
-      color: var(--theme-ui-colors-heading);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
+    .feature-area-card .feature-area-card-title h2 {
+      font-size: 35px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .feature-area-card .feature-area-card-title h3 {
+      font-size: 25px;
+      font-weight: bold;
+      margin: 0;
+    }
     .feature-area-card .small-img {
       width: 50px;
       height: 50px;
@@ -126,6 +138,8 @@
     .feature-area-card p {
       margin-top: 10px;
       color: var(--theme-ui-colors-text_secondary);
+      font-size: 20px; /* Increased font-size */
+      font-weight: 550; /* Set font-weight to medium bold */
     }
 
     /* Sinusoidal wave effect */
@@ -486,101 +500,55 @@
                 <div class="css-1w2x6qe">
                     <div class="css-fjr8hv">
                         <p class="css-1kng7n8">What We Do?</p>
-                        <h2 class="css-zdc3pw">Meet NeuroAscend.AI</h2></div>
-                    <div  class="css-1vt8nsp">
-                        <div class="css-152tnqx">
-                            <img src="assets/features/exercise-human.png"
-                                 alt="default alt text" class="css-1sxqte2">
-                            <div class="css-70evls"><h2 class="css-sk9a8n">
-                                Exercise</h2>
-                                <h2 class="css-30maei">and activity recommendations</h2>
-                                <div class="css-4380ty">
-                                    <img src="assets/features/exercise-dumbell.png"
-                                         alt="default alt text"
-                                         class="css-1kfopif">
-                                    <div class="css-hg6z6n">Daily exercise and activity recommendations based on
-                                        your
-                                        Alzheimer's level.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="css-152tnqx">
-                            <img src="assets/features/diet-human.png"
-                                 alt="default alt text" class="css-1sxqte2">
-                            <div class="css-70evls">
-                                <h2 class="css-sk9a8n">Special</h2>
-                                <h2 class="css-30maei">Diets</h2>
-                                <div class="css-4380ty">
-                                    <img src="assets/features/diet-apple.png"
-                                         alt="default alt text" class="css-ijn0wt">
-                                    <div class="css-hg6z6n">The medications
-                                        you should take and diets tailored to you according to your needs and
-                                        limitations.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="css-152tnqx">
-                            <img src="assets/features/intelligence-human.png"
-                                 alt="default alt text" class="css-1sxqte2">
-                            <div class="css-70evls"><h2 class="css-sk9a8n">
-                                Intelligence</h2>
-                                <h2 class="css-30maei">Activities</h2>
-                                <div class="css-4380ty">
-                                    <img src="assets/features/intelligence-brain.png"
-                                         alt="default alt text"
-                                         class="css-1igr4sz">
-                                    <div class="css-hg6z6n">Recommended activities based on your Alzheimer's
-                                        level.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="css-152tnqx">
-                            <img src="assets/features/reminder-human.png"
-                                 alt="default alt text"
-                                 class="css-1sxqte2">
-                            <div class="css-70evls"><h2 class="css-sk9a8n">Reminder</h2>
-                                <h2 class="css-30maei">
-                                    Time</h2>
-                                <div class="css-4380ty">
-                                    <img src="assets/features/reminder-clock.png"
-                                         alt="default alt text"
-                                         class="css-1kfopif">
-                                    <div class="css-hg6z6n">                     Reminders that track medication,
-                                        social activities and care you may need in your daily life.
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                        <h2>Meet NeuroAscend.AI</h2></div>
 
                     <div class="feature-area">
                       <div class="feature-area-card">
-                        <img src="https://via.placeholder.com/100" alt="Card Image">
-                        <h2>Card Title</h2>
+                        <img src="assets/features/exercise.png" alt="Card Image">
+
+                        <div class="feature-area-card-title">
+                          <h2>Exercise</h2>
+                          <h3>and activity recommendations</h3>
+                        </div>
                         <img class="small-img" src="https://via.placeholder.com/50" alt="Small Image">
-                        <p>Card description goes here.</p>
+                        <p>Daily exercise and activity recommendations based on
+                          your
+                          Alzheimer's level.</p>
                       </div>
                       <div class="feature-area-card">
-                        <img src="https://via.placeholder.com/100" alt="Card Image">
-                        <h2>Card Title</h2>
+                        <img src="assets/features/diet.png" alt="Card Image">
+
+                        <div class="feature-area-card-title">
+                          <h2>Special</h2>
+                          <h3>Diets</h3>
+                        </div>
                         <img class="small-img" src="https://via.placeholder.com/50" alt="Small Image">
-                        <p>Card description goes here.</p>
+                        <p>The medications
+                          you should take and diets tailored to you according to your needs and
+                          limitations.</p>
                       </div>
                       <div class="feature-area-card">
-                        <img src="https://via.placeholder.com/100" alt="Card Image">
-                        <h2>Card Title</h2>
+                        <img src="assets/features/intelligence.png" alt="Card Image">
+
+                        <div class="feature-area-card-title">
+                          <h2>Intelligence</h2>
+                          <h3>Activities</h3>
+                        </div>
+                        
                         <img class="small-img" src="https://via.placeholder.com/50" alt="Small Image">
-                        <p>Card description goes here.</p>
+                        <p>Recommended activities based on your Alzheimer's
+                          level.</p>
                       </div>
                       <div class="feature-area-card">
-                        <img src="https://via.placeholder.com/100" alt="Card Image">
-                        <h2>Card Title</h2>
+                        <img src="assets/features/reminder.png" alt="Card Image">
+
+                        <div class="feature-area-card-title">
+                          <h2>Reminder</h2>
+                          <h3>Time</h3>
+                        </div>
                         <img class="small-img" src="https://via.placeholder.com/50" alt="Small Image">
-                        <p>Card description goes here.</p>
+                        <p>                     Reminders that track medication,
+                          social activities and care you may need in your daily life.</p>
                       </div>
                     </div>
                 </div>
