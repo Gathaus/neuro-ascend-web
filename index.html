@@ -47,6 +47,47 @@
     .slick-next {
       right: 10px; /* Position next button to the right */
     }
+
+    .feature-section-title-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+    } 
+
+  .feature-section-title-container img{
+    max-width: 68px;
+    max-height: 46px;
+    margin-right: 10px;
+}
+
+.feature-section-title-container h2 {
+  margin: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+  .feature-section-title-container {
+    flex-direction: column;
+        /* align-items: flex-start; */
+    }
+
+    .feature-section-title-container img {
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 40px;
+    }
+
+    .feature-section-title-container h2 {
+        white-space: normal;
+        text-overflow: initial;
+    }
+}
+
+
+
 /* Container styles */
 .feature-area {
       --rem: 16;
@@ -93,8 +134,8 @@
     /* Card styles */
     .feature-area-card {
       background-color: var(--theme-ui-colors-background_secondary);
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -116,13 +157,13 @@
     }
 
     .feature-area-card .feature-area-card-title h2 {
-      font-size: 35px;
+      font-size: 30px;
       font-weight: bold;
       margin: 0;
     }
 
     .feature-area-card .feature-area-card-title h3 {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: bold;
       margin: 0;
     }
@@ -137,17 +178,17 @@
     .feature-area-card p {
       margin-top: 10px;
       color: var(--theme-ui-colors-text_secondary);
-      font-size: 20px; /* Increased font-size */
+      font-size: 18px; /* Increased font-size */
       font-weight: 550; /* Set font-weight to medium bold */
     }
 
     /* Sinusoidal wave effect */
     .feature-area-card:nth-child(2) {
-      transform: translateY(50px);
+      transform: translateY(120px);
     }
 
-    .feature-area-card:nth-child(3) {
-      transform: translateY(-50px);
+    .feature-area-card:nth-child(4) {
+      transform: translateY(120px);
     }
 
     @media (max-width: 1024px) {
@@ -155,7 +196,7 @@
         transform: translateY(0);
       }
 
-      .feature-area-card:nth-child(3) {
+      .feature-area-card:nth-child(4) {
         transform: translateY(0);
       }
     }
@@ -499,7 +540,12 @@
                 <div class="css-1w2x6qe">
                     <div class="css-fjr8hv">
                         <p class="css-1kng7n8">What We Do?</p>
-                        <h2>Meet NeuroAscend.AI</h2></div>
+                        <div class="feature-section-title-container">
+                          <img src="assets/features/icon-2.png">
+                          <h2>Meet NeuroAscend.AI</h2>
+
+                        </div>
+                      </div>
 
                     <div class="feature-area">
                       <div class="feature-area-card">
