@@ -5568,7 +5568,7 @@ img {
 .story-row {
   display: flex;
   align-items: center;
-  margin-bottom: 130px; /* Increased from 80px */
+  margin-bottom: 50px;
 }
 
 .right-aligned {
@@ -5589,10 +5589,28 @@ img {
 
 .story-image {
   flex-shrink: 0;
-  width: 300px;
-  height: 200px;
+  max-width: 350px;
+  max-height: 500px;
   margin: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 4px solid black;
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+.story-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Maintain aspect ratio and fit the image within the container */
+  display: block; /* Remove any extra space around the image */
+}
+
+/* .left-aligned .story-image {
+  transform: rotate3d(0, 1, 0, 60deg);
+}
+
+.right-aligned .story-image {
+  transform: rotate3d(0, 1, 0, -60deg);
+} */
