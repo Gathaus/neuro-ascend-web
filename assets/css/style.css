@@ -5541,3 +5541,58 @@ img {
     padding-right: 1rem;
   }
 }
+
+/* ################ new story area #################3 */
+
+.story-area-container {
+  color: #343d48;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1410px;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.story-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 130px; /* Increased from 80px */
+}
+
+.right-aligned {
+  justify-content: flex-end;
+}
+
+.left-aligned {
+  justify-content: flex-start;
+}
+
+.story-text {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-image {
+  flex-shrink: 0;
+  width: 300px;
+  height: 200px;
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
