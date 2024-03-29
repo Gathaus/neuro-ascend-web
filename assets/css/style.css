@@ -5543,7 +5543,6 @@ img {
 }
 
 /* ################ new story area #################3 */
-
 .story-area-container {
   color: #343d48;
   font-family: "DM Sans", sans-serif;
@@ -5589,6 +5588,14 @@ img {
   font-size: 20px;
 }
 
+.left-aligned .story-text {
+  padding-right: 150px; /* Add padding to the right for left-aligned text */
+}
+
+.right-aligned .story-text {
+  padding-left: 150px; /* Add padding to the left for right-aligned text */
+}
+
 .story-image {
   flex-shrink: 0;
   margin: 40px;
@@ -5599,10 +5606,7 @@ img {
 }
 
 .story-image img {
-  /* max-width: 100%;
-  max-height: 100%; */
   object-fit: cover;
-  /* display: block; */
   width: 350px;
   height: 350px;
   border: 4px solid black;
@@ -5626,8 +5630,16 @@ img {
   .left-aligned {
     flex-direction: column-reverse;
   }
+
   .story-text {
     font-size: 18px;
+  }
+  .left-aligned .story-text {
+    padding: 20px; /* Reset default padding */
+  }
+
+  .right-aligned .story-text {
+    padding: 20px; /* Reset default padding */
   }
 
   .story-image {
@@ -5635,8 +5647,8 @@ img {
   }
 
   .story-image img {
-    width: 100vw; /* Make the images full width on smaller screens */
-    height: 100vw; /* Set the height to the same as width (100vw) */
+    width: 100vw;
+    height: 100vw;
     max-height: 300px;
     max-width: 300px;
   }
