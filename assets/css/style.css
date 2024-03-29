@@ -5591,21 +5591,18 @@ img {
 
 .story-image {
   flex-shrink: 0;
-  /* max-width: 350px;
-  max-height: 500px; */
   margin: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   overflow: visible;
 }
 
 .story-image img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Maintain aspect ratio and fit the image within the container */
-  display: block; /* Remove any extra space around the image */
+  object-fit: contain;
+  display: block;
   max-width: 350px;
   max-height: 500px;
   border: 4px solid black;
@@ -5618,4 +5615,29 @@ img {
 
 .right-aligned .story-image {
   transform: perspective(700px) rotateY(-15deg);
+}
+
+@media (max-width: 767px) {
+  .story-row {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .left-aligned {
+    flex-direction: column-reverse;
+  }
+
+  .story-image {
+    margin: 20px 0;
+  }
+
+  .story-image img {
+    max-height: 100%;
+    max-width: 300px;
+  }
+
+  .left-aligned .story-image,
+  .right-aligned .story-image {
+    transform: none;
+  }
 }
