@@ -5626,6 +5626,10 @@ img {
   .left-aligned {
     flex-direction: column-reverse;
   }
+  .story-text {
+
+    font-size: 18px;
+  }
 
   .story-image {
     margin: 20px 0;
