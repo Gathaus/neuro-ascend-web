@@ -5599,12 +5599,12 @@ img {
 }
 
 .story-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  display: block;
-  max-width: 350px;
-  max-height: 500px;
+  /* max-width: 100%;
+  max-height: 100%; */
+  object-fit: cover;
+  /* display: block; */
+  width: 350px;
+  height: 350px;
   border: 4px solid black;
   border-radius: 10px;
 }
@@ -5635,7 +5635,9 @@ img {
   }
 
   .story-image img {
-    max-height: 100%;
+    width: 100vw; /* Make the images full width on smaller screens */
+    height: 100vw; /* Set the height to the same as width (100vw) */
+    max-height: 300px;
     max-width: 300px;
   }
 
