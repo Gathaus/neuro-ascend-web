@@ -5557,7 +5557,7 @@ img {
   padding-bottom: 100px;
   padding-left: 30px;
   padding-right: 30px;
-  max-width: 1410px;
+  max-width: 1600px;
   padding-top: 140px;
   display: flex;
   flex-direction: column;
@@ -5589,11 +5589,11 @@ img {
 }
 
 .left-aligned .story-text {
-  padding-right: 150px; /* Add padding to the right for left-aligned text */
+  padding-right: 250px; /* Add padding to the right for left-aligned text */
 }
 
 .right-aligned .story-text {
-  padding-left: 150px; /* Add padding to the left for right-aligned text */
+  padding-left: 250px; /* Add padding to the left for right-aligned text */
 }
 
 .story-image {
