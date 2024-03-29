@@ -5589,15 +5589,14 @@ img {
 
 .story-image {
   flex-shrink: 0;
-  max-width: 350px;
-  max-height: 500px;
+  /* max-width: 350px;
+  max-height: 500px; */
   margin: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 4px solid black;
-  border-radius: 10px;
-  overflow: hidden;
+
+  overflow: visible;
 }
 
 .story-image img {
@@ -5605,12 +5604,16 @@ img {
   max-height: 100%;
   object-fit: contain; /* Maintain aspect ratio and fit the image within the container */
   display: block; /* Remove any extra space around the image */
+  max-width: 350px;
+  max-height: 500px;
+  border: 4px solid black;
+  border-radius: 10px;
 }
 
-/* .left-aligned .story-image {
-  transform: rotate3d(0, 1, 0, 60deg);
+.left-aligned .story-image {
+  transform: perspective(700px) rotateY(15deg);
 }
 
 .right-aligned .story-image {
-  transform: rotate3d(0, 1, 0, -60deg);
-} */
+  transform: perspective(700px) rotateY(-15deg);
+}
