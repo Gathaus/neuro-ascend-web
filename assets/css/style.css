@@ -1699,7 +1699,12 @@ img {
 .counter-item {
   max-width: 170px;
 }
-
+.counter-item-cohen-caregiving {
+  max-width: 230px;
+}
+.counter-item-georgetown-university {
+  max-width: 190px;
+}
 .counter-area .single-counter {
   display: flex;
   position: relative;
