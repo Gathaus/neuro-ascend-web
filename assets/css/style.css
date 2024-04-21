@@ -2207,6 +2207,7 @@ img {
   border-radius: 8px;
   position: relative;
   padding-top: 50px;
+  margin-bottom: 35px;
 }
 
 .team-member-card:hover {
@@ -2223,11 +2224,9 @@ img {
 }
 
 .team-member-thumb {
-  width: 130px;
-  height: 130px;
-  flex-shrink: 0;
-  border: 2px solid #701f9c; /* Replace with your primary color */
-  border-radius: 50%;
+  width: 228px;
+  height: 204px;
+  /* flex-shrink: 0; */
 }
 
 .team-info-wrapper {
