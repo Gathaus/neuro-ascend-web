@@ -23,193 +23,187 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
 
     <!-- Assuming slick.css is in the assets/vendor directory -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/slick.css">
 
 
-    
-  <style>
-    /* Custom styles to ensure previous and next buttons are displayed inline */
-    .slick-prev, .slick-next {
-      top: 50%; /* Position at the vertical center */
-      transform: translateY(-50%);
-      font-size: 1.5em; /* Adjust font size as needed */
-      background-color: #fff; /* Button background color */
-      color: #333; /* Button text color */
-      border: 1px solid #ccc; /* Button border color */
-      padding: 5px 10px; /* Padding around the button */
-      border-radius: 5px; /* Button border radius */
-    }
+    <style>
+        /* Custom styles to ensure previous and next buttons are displayed inline */
+        .slick-prev, .slick-next {
+            top: 50%; /* Position at the vertical center */
+            transform: translateY(-50%);
+            font-size: 1.5em; /* Adjust font size as needed */
+            background-color: #fff; /* Button background color */
+            color: #333; /* Button text color */
+            border: 1px solid #ccc; /* Button border color */
+            padding: 5px 10px; /* Padding around the button */
+            border-radius: 5px; /* Button border radius */
+        }
 
-    .slick-prev {
-      left: 10px; /* Position previous button to the left */
-    }
+        .slick-prev {
+            left: 10px; /* Position previous button to the left */
+        }
 
-    .slick-next {
-      right: 10px; /* Position next button to the right */
-    }
+        .slick-next {
+            right: 10px; /* Position next button to the right */
+        }
 
-    /* ################ Story Area */
-
+        /* ################ Story Area */
 
 
+        .feature-section-title-container {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+        }
+
+        .feature-section-title-container img {
+            max-width: 68px;
+            max-height: 46px;
+            margin-right: 10px;
+        }
+
+        .feature-section-title-container h2 {
+            margin: 0;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            .feature-section-title-container {
+                flex-direction: column;
+                /* align-items: flex-start; */
+            }
+
+            .feature-section-title-container img {
+                margin-right: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                max-width: 40px;
+            }
+
+            .feature-section-title-container h2 {
+                white-space: normal;
+                text-overflow: initial;
+            }
+        }
 
 
+        /* Container styles */
+        .feature-area {
+            --rem: 16;
+            --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
+            --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary, #02073e);
+            --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
+            --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary, #0f2137);
+            --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
+            --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary, #f9fbfd);
+            --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
+            --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
+            --theme-ui-colors-primary: var(--theme-ui-colors-primary, #701f9c);
+            --theme-ui-colors-secondary: var(--theme-ui-colors-secondary, #2563ff);
+            --theme-ui-colors-muted: var(--theme-ui-colors-muted, #e4e4e4);
+            --theme-ui-colors-accent: var(--theme-ui-colors-accent, #609);
+            color: var(--theme-ui-colors-text, #343d48);
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.8;
+            font-weight: normal;
+            box-sizing: border-box;
+            margin: 0;
+            min-width: 0;
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
 
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px 20px;
+        }
 
+        @media (max-width: 1024px) {
+            .feature-area {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-    .feature-section-title-container {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
+        @media (max-width: 768px) {
+            .feature-area {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
 
-    } 
+        /* Card styles */
+        .feature-area-card {
+            background-color: var(--theme-ui-colors-background_secondary);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 
-  .feature-section-title-container img{
-    max-width: 68px;
-    max-height: 46px;
-    margin-right: 10px;
-}
+        }
 
-.feature-section-title-container h2 {
-  margin: 0;
-    white-space: nowrap;
-    text-align: center;
-}
+        .feature-area-card img {
+            /* width: 100px;
+            height: 100px; */
+            object-fit: cover;
+        }
 
-@media (max-width: 480px) {
-  .feature-section-title-container {
-    flex-direction: column;
-        /* align-items: flex-start; */
-    }
+        .feature-area-card .feature-area-card-title {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .feature-section-title-container img {
-        margin-right: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        max-width: 40px;
-    }
+        .feature-area-card .feature-area-card-title h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+        }
 
-    .feature-section-title-container h2 {
-        white-space: normal;
-        text-overflow: initial;
-    }
-}
+        .feature-area-card .feature-area-card-title h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
 
+        .feature-area-card .small-img {
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
 
+        .feature-area-card p {
+            margin-top: 10px;
+            color: var(--theme-ui-colors-text_secondary);
+            font-size: 18px; /* Increased font-size */
+            font-weight: 550; /* Set font-weight to medium bold */
+        }
 
-/* Container styles */
-.feature-area {
-      --rem: 16;
-      --theme-ui-colors-text: var(--theme-ui-colors-text, #343d48);
-      --theme-ui-colors-text_secondary: var(--theme-ui-colors-text_secondary, #02073e);
-      --theme-ui-colors-heading: var(--theme-ui-colors-heading, #0f2137);
-      --theme-ui-colors-heading_secondary: var(--theme-ui-colors-heading_secondary, #0f2137);
-      --theme-ui-colors-background: var(--theme-ui-colors-background, #ffffff);
-      --theme-ui-colors-background_secondary: var(--theme-ui-colors-background_secondary, #f9fbfd);
-      --theme-ui-colors-border_color: var(--theme-ui-colors-border_color, #e5ecf4);
-      --theme-ui-colors-yellow: var(--theme-ui-colors-yellow, #ffa740);
-      --theme-ui-colors-primary: var(--theme-ui-colors-primary, #701f9c);
-      --theme-ui-colors-secondary: var(--theme-ui-colors-secondary, #2563ff);
-      --theme-ui-colors-muted: var(--theme-ui-colors-muted, #e4e4e4);
-      --theme-ui-colors-accent: var(--theme-ui-colors-accent, #609);
-      color: var(--theme-ui-colors-text, #343d48);
-      font-family: "DM Sans", sans-serif;
-      line-height: 1.8;
-      font-weight: normal;
-      box-sizing: border-box;
-      margin: 0;
-      min-width: 0;
-      display: grid;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px 20px;
-    }
+        /* Sinusoidal wave effect */
+        .feature-area-card:nth-child(2) {
+            transform: translateY(120px);
+        }
 
-    @media (max-width: 1024px) {
-      .feature-area {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+        .feature-area-card:nth-child(4) {
+            transform: translateY(120px);
+        }
 
-    @media (max-width: 768px) {
-      .feature-area {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
+        @media (max-width: 1024px) {
+            .feature-area-card:nth-child(2) {
+                transform: translateY(0);
+            }
 
-    /* Card styles */
-    .feature-area-card {
-      background-color: var(--theme-ui-colors-background_secondary);
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-    }
-
-    .feature-area-card img {
-      /* width: 100px;
-      height: 100px; */
-      object-fit: cover;
-    }
-    .feature-area-card .feature-area-card-title {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .feature-area-card .feature-area-card-title h2 {
-      font-size: 30px;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .feature-area-card .feature-area-card-title h3 {
-      font-size: 20px;
-      font-weight: bold;
-      margin: 0;
-    }
-    .feature-area-card .small-img {
-      width: 35px;
-      height: 35px;
-      object-fit: cover;
-      margin-top: 25px;
-      margin-bottom: 15px;
-    }
-
-    .feature-area-card p {
-      margin-top: 10px;
-      color: var(--theme-ui-colors-text_secondary);
-      font-size: 18px; /* Increased font-size */
-      font-weight: 550; /* Set font-weight to medium bold */
-    }
-
-    /* Sinusoidal wave effect */
-    .feature-area-card:nth-child(2) {
-      transform: translateY(120px);
-    }
-
-    .feature-area-card:nth-child(4) {
-      transform: translateY(120px);
-    }
-
-    @media (max-width: 1024px) {
-      .feature-area-card:nth-child(2) {
-        transform: translateY(0);
-      }
-
-      .feature-area-card:nth-child(4) {
-        transform: translateY(0);
-      }
-    }
-  </style>
+            .feature-area-card:nth-child(4) {
+                transform: translateY(0);
+            }
+        }
+    </style>
 
 </head>
 
@@ -226,7 +220,7 @@
         <div class="container position-relative">
             <a class="navbar-brand" href="index.html">
                 <img
-                
+
                         class="navbar-brand-regular logo-standard"
                         src="assets/logo/logo-1.png"
                         alt="brand-logo"
@@ -274,7 +268,8 @@
                             <a class="nav-link scroll" href="#review">User Comments</a>
                         </li> -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Blog
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -489,122 +484,167 @@
 
     <section id="story" class="css-0">
 
-      <div class="story-area-container">
-        <!-- First kind of div -->
-        <div class="story-row right-aligned">
-          <div class="story-text">
-            <h3>In My Father's Of The Light: The Story Behind NeuroAscend.AI</h3>
-            <!-- Text content goes here -->
-            The enveloping of Alzheimer's disease around the sturdy family foundations and our 10-year journey with it (still ongoing).Since childhood, I grew up in a family where education was always highly valued, and success was consistently acknowledged. However, as I prepared for university of a mysterious journey that lay ahead during these challenging times. At first, we couldn't make sense of it, and we had no knowledge about this disease.
-          </div>
-          <div class="story-image">
-            <!-- Image goes here -->
-            <img src="assets/story/story-1.png">
-          </div>
-        </div>
-      
-        <!-- Second kind of div -->
-        <div class="story-row left-aligned">
-          <div class="story-image">
-            <!-- Image goes here -->
-            <img src="assets/story/story-3.png">
-          </div>
-          <div class="story-text">
-            <!-- Text content goes here -->
-           The desire to pursue a career in engineering and create something meaningful has always motivated me. Yet, when faced with this unexpected turn of events in life, I found myself embarking on an unknown journey. My father's illness not only questioned our family's dreams and goals but also mine. However, even amidst this trying process, my passion for research and innovation never wavered. My university years were spent participating in various projects, yet I realized that what truly mattered to me was being part of a project that would make a difference in people's lives.
-          </div>
-        </div>
-              <!-- First kind of div -->
-        <div class="story-row right-aligned">
-          <div class="story-text">
-            <!-- Text content goes here -->
-            My research on Alzheimer's disease introduced me to a world I had never seen before. Every day, I delved into new articles, witnessed groundbreaking discoveries, and realized that I was not alone in this journey. Equipped with this knowledge, I set myself a purpose: to fight against Alzheimer's and help those affected by this disease.
-          </div>
-          <div class="story-image">
-            <img src="assets/story/story-4.png" alt="Image description">
-          </div>
-        </div>
+        <div class="story-area-container">
+            <!-- First kind of div -->
+            <div class="story-row right-aligned">
+                <div class="story-text">
+                    <h3>In My Father's Of The Light: The Story Behind NeuroAscend.AI</h3>
+                    <!-- Text content goes here -->
+                    The enveloping of Alzheimer's disease around the sturdy family foundations and our 10-year journey
+                    with it (still ongoing).Since childhood, I grew up in a family where education was always highly
+                    valued, and success was consistently acknowledged. However, as I prepared for university of a
+                    mysterious journey that lay ahead during these challenging times. At first, we couldn't make sense
+                    of it, and we had no knowledge about this disease.
+                </div>
+                <div class="story-image">
+                    <!-- Image goes here -->
+                    <img src="assets/story/story-1.png">
+                </div>
+            </div>
 
-        <!-- Second kind of div -->
-        <div class="story-row left-aligned">
-          <div class="story-image">
-            <img src="assets/story/story-5.png" alt="Another image description">
-          </div>
-          <div class="story-text">
-            <!-- Text content goes here -->
-            With this decision, I set out on a journey, gathering all the courage to overcome the obstacles ahead. As I took the first steps, from Istanbul to America, I embarked on a journey filled with determination and resilience. I lived alone in Istanbul and spent days visiting hospitals, consulting with doctors to confirm my ideas and gather insights on the feasibility and impact of my project. During this process, my father's illness was visibly worsening day by day. He first stopped driving due to confusion, then retired from work due to cognitive issues, and eventually became unable to recognize us or communicate effectively.
-          </div>
-        </div>
-        <!-- First kind of div -->
-        <div class="story-row right-aligned">
-          <div class="story-text">
-            <!-- Text content goes here -->
-            There were times he would sit and stare out of the window for hours, sometimes not speaking at all, and sometimes trying to wander off from home. It was the most heartbreaking thing I've witnessed in my life. We spent years searching for him on the streets every day. Once, he walked so far and got lost that we found him collapsed. He had to be taken to the hospital by ambulance because he couldn't stay at home or sometimes he ran away from us due to not recognizing us. He started to become increasingly isolated from society, stopped meeting his friends, spent hours watching TV, or doing nothing at all. Alzheimer's was truly a terrifying disease.
-          </div>
-          <div class="story-image">
-            <img src="assets/story/story-7.png" alt="Image description">
-          </div>
-        </div>
+            <!-- Second kind of div -->
+            <div class="story-row left-aligned">
+                <div class="story-image">
+                    <!-- Image goes here -->
+                    <img src="assets/story/story-3.png">
+                </div>
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    The desire to pursue a career in engineering and create something meaningful has always motivated
+                    me. Yet, when faced with this unexpected turn of events in life, I found myself embarking on an
+                    unknown journey. My father's illness not only questioned our family's dreams and goals but also
+                    mine. However, even amidst this trying process, my passion for research and innovation never
+                    wavered. My university years were spent participating in various projects, yet I realized that what
+                    truly mattered to me was being part of a project that would make a difference in people's lives.
+                </div>
+            </div>
+            <!-- First kind of div -->
+            <div class="story-row right-aligned">
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    My research on Alzheimer's disease introduced me to a world I had never seen before. Every day, I
+                    delved into new articles, witnessed groundbreaking discoveries, and realized that I was not alone in
+                    this journey. Equipped with this knowledge, I set myself a purpose: to fight against Alzheimer's and
+                    help those affected by this disease.
+                </div>
+                <div class="story-image">
+                    <img src="assets/story/story-4.png" alt="Image description">
+                </div>
+            </div>
 
-        <!-- Second kind of div -->
-        <div class="story-row left-aligned">
-          <div class="story-image">
-            <img src="assets/story/story-8.png" alt="Another image description">
-          </div>
-          <div class="story-text">
-            <!-- Text content goes here -->
-            As the pandemic hit, he completely lost his ability to speak. He could no longer form coherent sentences or communicate. We didn't even realize how it happened. I struggled to find activities we could do together to engage him. Eventually, through the companionship of pets and music therapy, we managed the pandemic period a little better. I wish I had known this information earlier. We visited many doctors, but none could offer a solution as we were dealing with an incurable disease. It was too late for my father, but I want to help everyone else who is struggling on this difficult journey like me.
-          </div>
-        </div>
-        <!-- First kind of div -->
-        <div class="story-row right-aligned">
-          <div class="story-text">
-            <!-- Text content goes here -->
-            Towards the end of the pandemic, my father had lost even the ability to perform simple daily tasks. We had to assist him with everything from bathing to eating. He had lost all his abilities and we could only take him out for a walk daily. Physical activity seemed to benefit him because it was the only thing he remembered!
-          </div>
-          <div class="story-image">
-            <img src="assets/story/story-11.png" alt="Image description">
-          </div>
-        </div>
+            <!-- Second kind of div -->
+            <div class="story-row left-aligned">
+                <div class="story-image">
+                    <img src="assets/story/story-5.png" alt="Another image description">
+                </div>
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    With this decision, I set out on a journey, gathering all the courage to overcome the obstacles
+                    ahead. As I took the first steps, from Istanbul to America, I embarked on a journey filled with
+                    determination and resilience. I lived alone in Istanbul and spent days visiting hospitals,
+                    consulting with doctors to confirm my ideas and gather insights on the feasibility and impact of my
+                    project. During this process, my father's illness was visibly worsening day by day. He first stopped
+                    driving due to confusion, then retired from work due to cognitive issues, and eventually became
+                    unable to recognize us or communicate effectively.
+                </div>
+            </div>
+            <!-- First kind of div -->
+            <div class="story-row right-aligned">
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    There were times he would sit and stare out of the window for hours, sometimes not speaking at all,
+                    and sometimes trying to wander off from home. It was the most heartbreaking thing I've witnessed in
+                    my life. We spent years searching for him on the streets every day. Once, he walked so far and got
+                    lost that we found him collapsed. He had to be taken to the hospital by ambulance because he
+                    couldn't stay at home or sometimes he ran away from us due to not recognizing us. He started to
+                    become increasingly isolated from society, stopped meeting his friends, spent hours watching TV, or
+                    doing nothing at all. Alzheimer's was truly a terrifying disease.
+                </div>
+                <div class="story-image">
+                    <img src="assets/story/story-7.png" alt="Image description">
+                </div>
+            </div>
 
-        <!-- Second kind of div -->
-        <div class="story-row left-aligned">
-          <div class="story-image">
-            <img src="assets/story/story-12.png" alt="Another image description">
-          </div>
-          <div class="story-text">
-            <!-- Text content goes here -->
-            Nearly two years ago, our entire family contracted Covid severely, and my father stayed in the intensive care unit for a month and a half. It was the darkest period for our family. Unfortunately, my father forgot how to walk at the end of a month and a half and reached the final stage of Alzheimer's. Currently, he has been bedridden for two years.
-          </div>
-        </div>
-        <!-- First kind of div -->
-        <div class="story-row right-aligned">
-          <div class="story-text">
-            <!-- Text content goes here -->
-            My father always wanted me to be a good engineer. However, I was inclined towards helping people and doing something meaningful in life. Now, as we approach the beta testing phase, I am filled with excitement and responsibility to bring about an innovation that will impact millions of lives. Our artificial intelligence-powered mobile application, born out of ten years of experience in Alzheimer's, engineering expertise, and the dedication of our doctors, not only addresses Alzheimer's but also works on 22 different diseases. Our aim is to take a holistic approach to the problems faced by patients and their families, improve their physical and mental health, and enhance their quality of life by providing personalized routines, advice, and content.
-          </div>
-          <div class="story-image">
-            <img src="assets/story/story-14.png" alt="Image description">
-          </div>
-        </div>
+            <!-- Second kind of div -->
+            <div class="story-row left-aligned">
+                <div class="story-image">
+                    <img src="assets/story/story-8.png" alt="Another image description">
+                </div>
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    As the pandemic hit, he completely lost his ability to speak. He could no longer form coherent
+                    sentences or communicate. We didn't even realize how it happened. I struggled to find activities we
+                    could do together to engage him. Eventually, through the companionship of pets and music therapy, we
+                    managed the pandemic period a little better. I wish I had known this information earlier. We visited
+                    many doctors, but none could offer a solution as we were dealing with an incurable disease. It was
+                    too late for my father, but I want to help everyone else who is struggling on this difficult journey
+                    like me.
+                </div>
+            </div>
+            <!-- First kind of div -->
+            <div class="story-row right-aligned">
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    Towards the end of the pandemic, my father had lost even the ability to perform simple daily tasks.
+                    We had to assist him with everything from bathing to eating. He had lost all his abilities and we
+                    could only take him out for a walk daily. Physical activity seemed to benefit him because it was the
+                    only thing he remembered!
+                </div>
+                <div class="story-image">
+                    <img src="assets/story/story-11.png" alt="Image description">
+                </div>
+            </div>
 
-        <!-- Second kind of div -->
-        <div class="story-row left-aligned">
-          <div class="story-image">
-            <img src="assets/story/story-15.png" alt="Another image description">
-          </div>
-          <div class="story-text">
-            <!-- Text content goes here -->
-            Throughout this enduring journey, we have taken many significant steps and formed crucial partnerships. We invite you to stay updated on new developments and be part of the progress of our valuable project. Stay tuned and become a part of this meaningful endeavor!
-          </div>
+            <!-- Second kind of div -->
+            <div class="story-row left-aligned">
+                <div class="story-image">
+                    <img src="assets/story/story-12.png" alt="Another image description">
+                </div>
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    Nearly two years ago, our entire family contracted Covid severely, and my father stayed in the
+                    intensive care unit for a month and a half. It was the darkest period for our family. Unfortunately,
+                    my father forgot how to walk at the end of a month and a half and reached the final stage of
+                    Alzheimer's. Currently, he has been bedridden for two years.
+                </div>
+            </div>
+            <!-- First kind of div -->
+            <div class="story-row right-aligned">
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    My father always wanted me to be a good engineer. However, I was inclined towards helping people and
+                    doing something meaningful in life. Now, as we approach the beta testing phase, I am filled with
+                    excitement and responsibility to bring about an innovation that will impact millions of lives. Our
+                    artificial intelligence-powered mobile application, born out of ten years of experience in
+                    Alzheimer's, engineering expertise, and the dedication of our doctors, not only addresses
+                    Alzheimer's but also works on 22 different diseases. Our aim is to take a holistic approach to the
+                    problems faced by patients and their families, improve their physical and mental health, and enhance
+                    their quality of life by providing personalized routines, advice, and content.
+                </div>
+                <div class="story-image">
+                    <img src="assets/story/story-14.png" alt="Image description">
+                </div>
+            </div>
+
+            <!-- Second kind of div -->
+            <div class="story-row left-aligned">
+                <div class="story-image">
+                    <img src="assets/story/story-15.png" alt="Another image description">
+                </div>
+                <div class="story-text">
+                    <!-- Text content goes here -->
+                    Throughout this enduring journey, we have taken many significant steps and formed crucial
+                    partnerships. We invite you to stay updated on new developments and be part of the progress of our
+                    valuable project. Stay tuned and become a part of this meaningful endeavor!
+                </div>
+            </div>
+            <img
+
+                    class="logo-standard center"
+                    src="assets/logo/logo-1.png"
+                    alt="brand-logo"
+            />
         </div>
-          <img
-                        
-          class="logo-standard center"
-          src="assets/logo/logo-1.png"
-          alt="brand-logo"
-        />
-      </div>
 
     </section>
 
@@ -627,11 +667,11 @@
     </section>
     <div>
 
-    <!-- ***** Features Area Start ***** -->
-    <section
-            id="features"
-            class="section features-area style-two overflow-hidden ptb_100"
-    >
+        <!-- ***** Features Area Start ***** -->
+        <section
+                id="features"
+                class="section features-area style-two overflow-hidden ptb_100"
+        >
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <!-- Section Heading -->
@@ -639,83 +679,82 @@
 
                         <h2>What Makes NeuroAscend.AI Different?</h2>
                         <p class="d-sm-block mt-4">
-                            NeuroAscend.AI takes a holistic approach to Alzheimer's disease, including personal routines for patients as well as advise for Alzheimer's patients, their family, doctors, and caregivers to help slow down the Alzheimer's progression and improve quality of life.
+                            NeuroAscend.AI takes a holistic approach to Alzheimer's disease, including personal
+                            routines for patients as well as advise for Alzheimer's patients, their family, doctors, and
+                            caregivers to help slow down the Alzheimer's progression and improve quality of life.
                         </p>
-                     
+
                     </div>
                 </div>
             </div>
 
-               
-    <!-- ***** Features Area End ***** -->
+
+            <!-- ***** Features Area End ***** -->
             <section id="feature" class="css-mtbi12">
                 <div class="css-1w2x6qe">
                     <div class="css-fjr8hv">
                         <p class="css-1kng7n8">What We Do?</p>
                         <div class="feature-section-title-container">
-                          <img src="assets/features/icon-2.png">
-                          <h2>Meet NeuroAscend.AI</h2>
+                            <img src="assets/features/icon-2.png">
+                            <h2>Meet NeuroAscend.AI</h2>
 
                         </div>
-                      </div>
+                    </div>
 
                     <div class="feature-area">
-                      <div class="feature-area-card">
-                        <img src="assets/features/exercise.png" alt="Card Image">
+                        <div class="feature-area-card">
+                            <img src="assets/features/exercise.png" alt="Card Image">
 
-                        <div class="feature-area-card-title">
-                          <h2>Exercise</h2>
-                          <h3>and activity recommendations</h3>
+                            <div class="feature-area-card-title">
+                                <h2>Exercise</h2>
+                                <h3>and activity recommendations</h3>
+                            </div>
+                            <img class="small-img" src="assets/features/divider-icon.png" alt="Small Image">
+                            <p>Daily exercise and activity recommendations based on
+                                your
+                                Alzheimer's level.</p>
                         </div>
-                        <img class="small-img" src="assets/features/divider-icon.png" alt="Small Image">
-                        <p>Daily exercise and activity recommendations based on
-                          your
-                          Alzheimer's level.</p>
-                      </div>
-                      <div class="feature-area-card">
-                        <img src="assets/features/diet.png" alt="Card Image">
+                        <div class="feature-area-card">
+                            <img src="assets/features/diet.png" alt="Card Image">
 
-                        <div class="feature-area-card-title">
-                          <h2>Special</h2>
-                          <h3>Diets</h3>
+                            <div class="feature-area-card-title">
+                                <h2>Special</h2>
+                                <h3>Diets</h3>
+                            </div>
+                            <img class="small-img" src="assets/features/divider-icon.png" alt="Small Image">
+                            <p>The medications
+                                you should take and diets tailored to you according to your needs and
+                                limitations.</p>
                         </div>
-                        <img class="small-img" src="assets/features/divider-icon.png" alt="Small Image">
-                        <p>The medications
-                          you should take and diets tailored to you according to your needs and
-                          limitations.</p>
-                      </div>
-                      <div class="feature-area-card">
-                        <img src="assets/features/intelligence.png" alt="Card Image">
+                        <div class="feature-area-card">
+                            <img src="assets/features/intelligence.png" alt="Card Image">
 
-                        <div class="feature-area-card-title">
-                          <h2>Intelligence</h2>
-                          <h3>Activities</h3>
-                        </div>
-                        
-                        <img class="small-img" src="assets/features/divider-icon.png" alt="Small Image">
-                        <p>Recommended activities based on your Alzheimer's
-                          level.</p>
-                      </div>
-                      <div class="feature-area-card">
-                        <img src="assets/features/reminder.png" alt="Card Image">
+                            <div class="feature-area-card-title">
+                                <h2>Intelligence</h2>
+                                <h3>Activities</h3>
+                            </div>
 
-                        <div class="feature-area-card-title">
-                          <h2>Reminder</h2>
-                          <h3>Time</h3>
+                            <img class="small-img" src="assets/features/divider-icon.png" alt="Small Image">
+                            <p>Recommended activities based on your Alzheimer's
+                                level.</p>
                         </div>
-                        <img class="small-img" src="assets/features/divider-icon.png" alt="Small Image">
-                        <p>                     Reminders that track medication,
-                          social activities and care you may need in your daily life.</p>
-                      </div>
+                        <div class="feature-area-card">
+                            <img src="assets/features/reminder.png" alt="Card Image">
+
+                            <div class="feature-area-card-title">
+                                <h2>Reminder</h2>
+                                <h3>Time</h3>
+                            </div>
+                            <img class="small-img" src="assets/features/divider-icon.png" alt="Small Image">
+                            <p> Reminders that track medication,
+                                social activities and care you may need in your daily life.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-    </section>
+        </section>
 
-
-
-    
 
         <!-- ***** Team Area Start ***** -->
         <section class="section team-area team-style-two overflow-hidden ptb_100">
@@ -732,16 +771,17 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <!-- Single Team -->
                         <div class="team-member-card">
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/feyza-sazak-7673a8181/" target="_blank" rel="noopener noreferrer">
+                            <a class="team-member-thumb" href="https://www.linkedin.com/in/feyza-sazak-7673a8181/"
+                               target="_blank" rel="noopener noreferrer">
                                 <img
-                                src="assets/team/8_feyza.png"
-                                alt="Feyza Sazak"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">Feyza Sazak</h2>
-                            <p class="info-designation">CEO & Founder</p>
-                        </div>
+                                        src="assets/team/8_feyza.png"
+                                        alt="Feyza Sazak"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">Feyza Sazak</h2>
+                                    <p class="info-designation">CEO & Founder</p>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -750,19 +790,20 @@
                         <!-- Single Team -->
                         <div class="team-member-card">
 
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/ilkayalbayrak/" target="_blank" rel="noopener noreferrer">
+                            <a class="team-member-thumb" href="https://www.linkedin.com/in/ilkayalbayrak/"
+                               target="_blank" rel="noopener noreferrer">
 
                                 <img
-                                src="assets/team/7_ilkay_albayrak.png"
-                                alt="İlkay Albayrak"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">İlkay Albayrak</h2>
-                            <p class="info-designation">Software Developer</p>
-                        </div>
+                                        src="assets/team/7_ilkay_albayrak.png"
+                                        alt="İlkay Albayrak"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">İlkay Albayrak</h2>
+                                    <p class="info-designation">Software Developer</p>
+                                </div>
                             </a>
-                           
+
                         </div>
                     </div>
 
@@ -770,1021 +811,1107 @@
                         <!-- Single Team -->
                         <div class="team-member-card">
 
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/rmy1/" target="_blank" rel="noopener noreferrer">
+                            <a class="team-member-thumb" href="https://www.linkedin.com/in/rmy1/" target="_blank"
+                               rel="noopener noreferrer">
                                 <img
-                                src="assets/team/5_riza_mert_yagci.png"
-                                alt="Rıza Mert Yağcı"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">Rıza Mert Yağcı</h2>
-                            <p class="info-designation">Software Developer</p>
-                        </div>
+                                        src="assets/team/5_riza_mert_yagci.png"
+                                        alt="Rıza Mert Yağcı"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">Rıza Mert Yağcı</h2>
+                                    <p class="info-designation">Software Developer</p>
+                                </div>
 
                             </a>
-                           
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <!-- Single Team -->
-                        <div class="team-member-card">
-                           
-                            <a class="team-member-thumb" href=" https://www.linkedin.com/in/martinwhitt/" target="_blank" rel="noopener noreferrer">
-                                <img
-                                src="assets/team/16_martin.png"
-                                alt="Martin Whittaker"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">Martin Whittaker</h2>
-                            <p class="info-designation">UI&UX Advisor</p>
-                        </div>
-                            </a>
-                            
+
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <!-- Single Team -->
                         <div class="team-member-card">
 
-                            <a class="team-member-thumb" href=" https://www.linkedin.com/in/u%C4%9Furkuzu-desinger/" target="_blank" rel="noopener noreferrer">
-
+                            <a class="team-member-thumb" href=" https://www.linkedin.com/in/martinwhitt/"
+                               target="_blank" rel="noopener noreferrer">
                                 <img
-                                src="assets/team/1_ugur_kuzu.png"
-                                alt="Uğur Kuzu"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">Uğur Kuzu</h2>
-                            <p class="info-designation">Design</p>
-                        </div>
+                                        src="assets/team/16_martin.png"
+                                        alt="Martin Whittaker"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">Martin Whittaker</h2>
+                                    <p class="info-designation">UI&UX Advisor</p>
+                                </div>
                             </a>
-                           
+
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <!-- Single Team -->
                         <div class="team-member-card">
 
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/zehra-erbay-930b0222b/?trk=public_profile_browsemap&original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=tr" target="_blank" rel="noopener noreferrer">
-                                <img
-                                src="assets/team/14_ulfet.png"
-                                alt="MD. Ülfet Zehra Erbay"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">MD. Ülfet Zehra Erbay</h2>
-                            <p class="info-designation">Neurology</p>
-                        </div>
+                            <a class="team-member-thumb" href=" https://www.linkedin.com/in/u%C4%9Furkuzu-desinger/"
+                               target="_blank" rel="noopener noreferrer">
 
+                                <img
+                                        src="assets/team/1_ugur_kuzu.png"
+                                        alt="Uğur Kuzu"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">Uğur Kuzu</h2>
+                                    <p class="info-designation">Design</p>
+                                </div>
                             </a>
-                           
+
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <!-- Single Team -->
                         <div class="team-member-card">
 
-                            <a class="team-member-thumb" class="team-member-thumb" href="https://www.linkedin.com/in/sevval-karadag-healthcare/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=tr" target="_blank" rel="noopener noreferrer">
+                            <a class="team-member-thumb"
+                               href="https://www.linkedin.com/in/zehra-erbay-930b0222b/?trk=public_profile_browsemap&original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=tr"
+                               target="_blank" rel="noopener noreferrer">
                                 <img
-                                src="assets/team/13_sevval.png"
-                                alt="BMed. Şevval Karadağ"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">BMed. Şevval Karadağ</h2>
-                            <p class="info-designation">Advisor</p>
-                        </div>
-                            </a>
-                           
-                        </div>
-                    </div>  
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                      <!-- Single Team -->
-                      <div class="team-member-card">
+                                        src="assets/team/14_ulfet.png"
+                                        alt="MD. Ülfet Zehra Erbay"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">MD. Ülfet Zehra Erbay</h2>
+                                    <p class="info-designation">Neurology</p>
+                                </div>
 
-                          <a class="team-member-thumb" href="https://www.linkedin.com/in/williamscohen/" target="_blank" rel="noopener noreferrer">
-                              <img
-                              src="assets/team/17_bill_cohen.png"
-                              alt="William (Bill) Cohen"
-                              class=""
-                      />
-                      <div class="team-info-wrapper">
-                          <h2 class="info-name">William (Bill) Cohen</h2>
-                          <p class="info-designation">Advisor</p>
-                      </div>
-                          </a>
-                         
-                      </div>
-                  </div> 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <!-- Single Team -->
-                        <div class="team-member-card">
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/sigrun-rodrigues/" target="_blank" rel="noopener noreferrer">
-                                <img
-                                src="assets/team/10_sigrun_nilsen.png"
-                                alt="Sigrun Nilsen Rodrigues"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">Sigrun Nilsen Rodrigues</h2>
-                            <p class="info-designation">Marketing Advisor</p>
-                        </div>
                             </a>
-                           
-                        </div>
-                    </div> 
-                    
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <!-- Single Team -->
-                        <div class="team-member-card">
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/brendanlwhitaker/" target="_blank" rel="noopener noreferrer">
-                                <img
-                                src="assets/team/9_brendan.png"
-                                alt="Brendan Whitaker"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">Brendan Whitaker</h2>
-                            <p class="info-designation">Marketing</p>
+
                         </div>
                     </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <!-- Single Team -->
+                        <div class="team-member-card">
+
+                            <a class="team-member-thumb" class="team-member-thumb"
+                               href="https://www.linkedin.com/in/sevval-karadag-healthcare/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=tr"
+                               target="_blank" rel="noopener noreferrer">
+                                <img
+                                        src="assets/team/13_sevval.png"
+                                        alt="BMed. Şevval Karadağ"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">BMed. Şevval Karadağ</h2>
+                                    <p class="info-designation">Advisor</p>
+                                </div>
                             </a>
-                            
-                    </div> 
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <!-- Single Team -->
+                        <div class="team-member-card">
+
+                            <a class="team-member-thumb" href="https://www.linkedin.com/in/williamscohen/"
+                               target="_blank" rel="noopener noreferrer">
+                                <img
+                                        src="assets/team/17_bill_cohen.png"
+                                        alt="William (Bill) Cohen"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">William (Bill) Cohen</h2>
+                                    <p class="info-designation">Advisor</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <!-- Single Team -->
+                        <div class="team-member-card">
+                            <a class="team-member-thumb" href="https://www.linkedin.com/in/sigrun-rodrigues/"
+                               target="_blank" rel="noopener noreferrer">
+                                <img
+                                        src="assets/team/10_sigrun_nilsen.png"
+                                        alt="Sigrun Nilsen Rodrigues"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">Sigrun Nilsen Rodrigues</h2>
+                                    <p class="info-designation">Marketing Advisor</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <!-- Single Team -->
                         <div class="team-member-card">
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/sezg%C3%BCl-%C5%9Fahin-079980aa/" target="_blank" rel="noopener noreferrer">
+                            <a class="team-member-thumb" href="https://www.linkedin.com/in/brendanlwhitaker/"
+                               target="_blank" rel="noopener noreferrer">
                                 <img
-                                src="assets/team/12_sezgul.png"
-                                alt="RD. Sezgül Şahin"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">RD. Sezgül Şahin</h2>
-                            <p class="info-designation">Dietitian</p>
+                                        src="assets/team/9_brendan.png"
+                                        alt="Brendan Whitaker"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">Brendan Whitaker</h2>
+                                    <p class="info-designation">Marketing</p>
+                                </div>
                         </div>
-                            </a>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <!-- Single Team -->
-                        <div class="team-member-card">
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/meliksah-cakin-a82586170/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=tr" target="_blank" rel="noopener noreferrer">
-                                <img
-                                src="assets/team/15_meliksah.png"
-                                alt="DC.Psy. Melikşah Çakın"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">DC.Psy. Melikşah Çakın</h2>
-                            <p class="info-designation">Psychology</p>
-                        </div>
-                            </a>
-                          
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <!-- Single Team -->
-                        <div class="team-member-card">
-                            <a class="team-member-thumb" href="https://www.linkedin.com/in/alexsey-yurievich-martynov-alvarez-b39a7017b/" target="_blank" rel="noopener noreferrer">
-                                <img
-                                src="assets/team/6_alexsey_martynov.png"
-                                alt="Alexsey Martynov"
-                                class=""
-                        />
-                        <div class="team-info-wrapper">
-                            <h2 class="info-name">Alexsey Martynov</h2>
-                            <p class="info-designation">Interpretation</p>
-                        </div>
-                            </a>
-                           
-                        </div>
-                    </div>
-                    
+                        </a>
 
-                
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <!-- Single Team -->
+                        <div class="team-member-card">
+                            <a class="team-member-thumb"
+                               href="https://www.linkedin.com/in/sezg%C3%BCl-%C5%9Fahin-079980aa/" target="_blank"
+                               rel="noopener noreferrer">
+                                <img
+                                        src="assets/team/12_sezgul.png"
+                                        alt="RD. Sezgül Şahin"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">RD. Sezgül Şahin</h2>
+                                    <p class="info-designation">Dietitian</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <!-- Single Team -->
+                        <div class="team-member-card">
+                            <a class="team-member-thumb"
+                               href="https://www.linkedin.com/in/meliksah-cakin-a82586170/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=tr"
+                               target="_blank" rel="noopener noreferrer">
+                                <img
+                                        src="assets/team/15_meliksah.png"
+                                        alt="DC.Psy. Melikşah Çakın"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">DC.Psy. Melikşah Çakın</h2>
+                                    <p class="info-designation">Psychology</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <!-- Single Team -->
+                        <div class="team-member-card">
+                            <a class="team-member-thumb"
+                               href="https://www.linkedin.com/in/alexsey-yurievich-martynov-alvarez-b39a7017b/"
+                               target="_blank" rel="noopener noreferrer">
+                                <img
+                                        src="assets/team/6_alexsey_martynov.png"
+                                        alt="Alexsey Martynov"
+                                        class=""
+                                />
+                                <div class="team-info-wrapper">
+                                    <h2 class="info-name">Alexsey Martynov</h2>
+                                    <p class="info-designation">Interpretation</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
         </section>
         <!-- ***** Team Area End ***** -->
-    
-       <!-- ***** Blog Area Start ***** -->
-      <section id="blog" class="section blog-area ptb_100">
-        <div class="section-heading text-center">
-            <h2>Discover our articles about Alzheimer's disease</h2>
-          </div>
 
-           <!-- Your card elements go here -->
-           <div class="container">
-            <div class="slider">
-
-
-                <!-- First card -->
-                <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/general/general-blog-post-7.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                          href="https://unsplash.com/@sweetlifediabetes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                          class="css-vurnku"
-                          >Sweet Life</a
-                        >
-                        on
-                        <a
-                          href="https://unsplash.com/photos/a-person-holding-a-small-device-in-their-hands-bPRZiasA8SM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                          class="css-vurnku"
-                          >Unsplash</a
-                        >
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">Feb 25, 2024</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Unveiling the Complex Link Between Diabetes and Cognitive
-                            Decline in Aging Adults
-                          </a>
-                        </h3>
-                        <p>
-                          The investigation sought to overcome prior limitations in
-                          research methodology regarding the association between
-                          diabetes and cognitive decline by conducting an in-depth
-                          analysis of longitudinal data from the Ginkgo Evaluation of
-                          Memory Study.
-                        </p>
-                        <a href="blog-general-post-7.html" class="blog-btn mt-3"
-                          >Read More</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/general/general-blog-post-6.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                          href="https://www.freepik.com/free-photo/memory-loss-dementia-alzheimer-concept-created-with-generative-ai-technology_40871019.htm#fromView=search&page=1&position=8&uuid=eb4df28c-549b-4bfd-b8d0-90b5ebb49f40"
-                          class="css-vurnku"
-                        >
-                          atlascompany</a
-                        >
-                        on Freepik
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">Feb 25, 2024</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Harnessing Deep Learning for Early Detection and
-                            Subtyping of Cognitive Decline: Advancements and
-                            Implications
-                          </a>
-                        </h3>
-                        <p>
-                          Dementia and other neurodegenerative diseases represent
-                          significant public health challenges worldwide, affecting
-                          millions of individuals and placing a substantial burden on
-                          healthcare systems. Despite their prevalence, these
-                          conditions are often underdiagnosed, particularly in their
-                          early stages when intervention could be most effective.
-                        </p>
-                        <a href="blog-general-post-6.html" class="blog-btn mt-3"
-                          >Read More</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-      
-                  <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/general/general-blog-post-5.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                          href="https://www.freepik.com/free-photo/robot-handshake-human-background-futuristic-digital-age_17850426.htm#fromView=search&page=1&position=45&uuid=f3a02b15-cf16-42ab-a221-68d3aa97ab79"
-                          class="css-vurnku"
-                        >
-                          rawpixel.com</a
-                        >
-                        on Freepik
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">Feb 25, 2024</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Unveiling Early Signs of Cognitive Decline: Deep Learning
-                            in Clinical Notes
-                          </a>
-                        </h3>
-                        <p>
-                          Dementia, a complex neurodegenerative syndrome characterized
-                          by progressive cognitive decline and memory impairment,
-                          represents a significant global health challenge, afflicting
-                          over 50 million individuals worldwide. Despite its profound
-                          impact, dementia often remains underdiagnosed due to the
-                          lack of standardized diagnostic procedures and the
-                          labor-intensive nature of the diagnostic process.
-                        </p>
-                        <a href="blog-general-post-5.html" class="blog-btn mt-3"
-                          >Read More</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/exercise/exercise-blog-post-2-thumb.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                          href="https://unsplash.com/@elli19?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                          class="css-vurnku"
-                          >Elena Kloppenburg</a
-                        >
-                        on
-                        <a
-                          href="https://unsplash.com/photos/pink-dumbbell-on-pink-textile-erUC4fTtCuo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                          class="css-vurnku"
-                          >Unsplash</a
-                        >
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">Feb 25, 2024</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Understanding BMI, Physical Activity, and Dementia
-                            Progression</a
-                          >
-                        </h3>
-                        <p>
-                          Dementia affects more than 5 million Americans aged 65 and
-                          older, with this number expected to triple by 2050. Growing
-                          evidence suggests that cardiovascular risk factors (such as
-                          overweight or obesity, high cholesterol, hypertension, and
-                          diabetes) are significant risk factors for dementia.
-                          However, the mechanism behind the association between high
-                          adiposity and dementia risk remains uncertain. While some
-                          studies have shown an association between higher weight or
-                          body mass index (BMI) at age 50 and dementia risk, others
-                          have observed an inverse relationship in individuals aged 65
-                          and older, termed the 'obesity paradox' in the literature.
-                        </p>
-                        <a href="blog-exercise-post-2.html" class="blog-btn mt-3"
-                          >Read More</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                <div class="col-12 col-md-6">
-                  <!-- Single Blog -->
-                  <div class="single-blog res-margin">
-                    <!-- Blog Thumb -->
-                    <div class="blog-thumb">
-                      <a href="#">
-                        <img src="assets/blog/general/general-blog-post-3.jpg" alt="Alzheimer's info">
-                      </a>
-                    </div>
-                    <div class="css-1bot5uz">
-                        Image by
-                        <a
-                        href="https://www.freepik.com/free-photo/doctor-performing-medical-research-lab_24236632.htm#fromView=search&page=2&position=1&uuid=6defdcad-5231-4d2b-9d71-0246f582ca0d"
-                        class="css-vurnku"
-                        > Freepik</a
-                      >
-                    </div>
-                    <!-- Blog Content -->
-                    <div class="blog-content p-4">
-                      <!-- Meta Info -->
-                      <ul class="meta-info d-flex justify-content-between">
-                        <li>By <a href="#">NeuroAscend.AI</a></li>
-                        <li><a href="#">Jan 15, 2024</a></li>
-                      </ul>
-                      <!-- Blog Title -->
-                      <h3 class="blog-title my-3">
-                        <a href="#">Unveiling the Complexities of Alzheimer's Disease: Insights from Research Frameworks and Gender Disparities</a>
-                      </h3>
-                      <p>
-                        Alzheimer's disease (AD) poses a significant challenge, being a progressive neurodegenerative disorder with no known cure. Recent research has delved into defining AD not just as a clinical entity but as a biological phenomenon. The NIA-AA Research Framework proposes a shift from syndromal to a biomarker-based definition of AD, aiming for targeted interventions grounded in biological understanding.
-                      </p>
-                      <a href="blog-general-post-3.html" class="blog-btn mt-3">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/general/general-blog-post-4.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                        href="https://www.freepik.com/free-photo/shot-senior-man-looking-out-window-while-sitting-wheelchair-homeelder-asian-male-stay-home-alone-wheelchair-look-view-out-window-from-living-room_27949520.htm#fromView=search&page=1&position=1&uuid=c281999c-858a-4668-ac7a-1af75ea6a41e?log-in=google"
-                        class="css-vurnku"
-                        > Lifestylememory</a
-                      >
-                      on Freepik
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">Jan 15, 2024</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Navigating the Alzheimer's Challenge: A Holistic
-                            Perspective
-                          </a>
-                        </h3>
-                        <p>
-                          Alzheimer's disease, an inexorable neurodegenerative force,
-                          not only presents a medical challenge but also raises
-                          profound ethical questions about maintaining dignity and
-                          quality of life amidst cognitive decline and the inexorable
-                          march towards death. This ethical conundrum is accentuated
-                          by the fact that those directly affected often struggle to
-                          express their preferences due to cognitive impairments.
-                        </p>
-                        <a href="blog-general-post-4.html" class="blog-btn mt-3"
-                          >Read More</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/exercise/exercise-blog-post-1-thumb.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                          href="https://www.freepik.com/free-photo/senior-couple-training-together_10847288.htm#fromView=search&page=4&position=3&uuid=d0415e0e-58e5-4f53-9ad7-4c70565b0f8b"
-                          class="css-vurnku"
-                          > Freepik</a
-                        >
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">Jan 15, 2024</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Unveiling the Cognitive Shield: Exploring the Nexus of
-                            Exercise, Hormones, and Alzheimer's Disease Risk
-                            Reduction</a
-                          >
-                        </h3>
-                        <p>
-                          Unlocking the potential to safeguard our minds! Delving into
-                          the fascinating realm where physical activity meets
-                          cognitive health, let's explore the powerful connection
-                          between exercise and Alzheimer's disease (AD). Scientific
-                          studies reveal a 45% reduction in AD risk associated with
-                          regular exercise, underlining the profound impact of an
-                          active lifestyle.
-                        </p>
-                        <a href="blog-exercise-post-1.html" class="blog-btn mt-3"
-                          >Read More</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/activity/activity-blog-post-1-thumb.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                        href="https://www.freepik.com/free-photo/elderly-man-confronting-alzheimer-disease_16518578.htm#fromView=search&page=1&position=13&uuid=d28dabcc-377f-4c6a-a64e-22ba15c6d626"
-                        class="css-vurnku"
-                        > Freepik</a
-                      >
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">Jan 15, 2024</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Cognitive Enrichment: Unveiling the Power of Intelligence
-                            Activities in Alzheimer's Care and Well-being</a
-                          >
-                        </h3>
-                        <p>
-                          Unlock a world of meaningful engagement and intellectual
-                          stimulation with Intelligence Activities. Take a proactive
-                          step towards maintaining cognitive function and enjoying a
-                          fulfilling lifestyle, uniquely catered to your Alzheimer's
-                          level. Embarking on a journey into the world of cognition
-                          and leisure activities! Our meta-analysis uncovered a
-                          profound link between engaging in leisure activities and a
-                          reduced risk of Age-Related Cognitive Decline (ACD),
-                          including Alzheimer's Disease (AD) and Vascular Dementia
-                          (VD).
-                        </p>
-                        <a href="blog-activity-post-1.html" class="blog-btn mt-3"
-                          >Read More</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/diet/diet-blog-post-1-thumb.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                        href="https://www.freepik.com/free-photo/top-view-delicious-fruit-salad-inside-plate-with-fresh-fruits-dark-tropical-fruit-tree-exotic-ripe-diet-photo_16387786.htm#from_view=detail_alsolike"
-                        class="css-vurnku"
-                        > KamranAydinov</a
-                      >
-                      on Freepik
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">Jan 15, 2024</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Navigating the Nutritional Maze: Unraveling the Complex
-                            Relationship Between Diet, Lifestyle, and Cognitive
-                            Well-being in Alzheimer's Disease</a
-                          >
-                        </h3>
-                        <p>
-                          Embark on a journey through the intricate relationship
-                          between nutrition and cognitive well-being in the context of
-                          Alzheimer's disease (AD) As the aging population grapples
-                          with dementia, our commitment to understanding the vital
-                          connection between lifestyle and cognitive health becomes
-                          paramount. Explore the world beyond macronutrients, where
-                          nutrients with neuroprotective and antioxidant properties
-                          play a pivotal role in preventing and treating AD.
-                        </p>
-                        <a href="blog-diet-post-1.html" class="blog-btn mt-3"
-                          >Read More</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-            
-                <!-- Second card -->
-                <div class="col-12 col-md-6">
-                 <!-- Single Blog -->
-              <div class="single-blog res-margin">
-                <!-- Blog Thumb -->
-                <div class="blog-thumb">
-                  <a href="#"
-                    ><img
-                      src="assets/blog/general/general-blog-post-2.jpg"
-                      alt="Empowering Individuals with Alzheimer’s"
-                  /></a>
-                </div>
-                <div class="css-1bot5uz">
-                    Image by
-                    <a
-                    href="https://www.freepik.com/free-photo/old-young-man-holding-hands-close-up_36802621.htm#fromView=search&page=2&position=52&uuid=1ac045c9-0c6d-492b-a387-8a86a87c2d14"
-                    class="css-vurnku"
-                    > pvproductions</a
-                  >
-                  on Freepik
-                </div>
-                <!-- Blog Content -->
-                <div class="blog-content p-4">
-                  <!-- Meta Info -->
-                  <ul class="meta-info d-flex justify-content-between">
-                    <li>By <a href="#">NeuroAscend.AI</a></li>
-                    <li><a href="#">May 31, 2023</a></li>
-                  </ul>
-                  <!-- Blog Title -->
-                  <h3 class="blog-title my-3">
-                    <a href="#"
-                      >Empowering Individuals with Alzheimer’s: Enhancing
-                      Quality of Life and Caregiver Support</a
-                    >
-                  </h3>
-                  <p>
-                    This article expands on our earlier investigation of
-                    Alzheimer’s disease by exploring the many facets of this
-                    neurological condition. We will talk about creative ideas,
-                    doable plans of action, and neighborhood resources that may
-                    dramatically improve the quality of life for those impacted
-                    by the condition.
-                  </p>
-                  <a href="blog-2.html" class="blog-btn mt-3">Read More</a>
-                </div>
-              </div>
-                </div>
-            
-                <!-- Third card -->
-                <div class="col-12 col-md-6">
-                    <!-- Single Blog -->
-                    <div class="single-blog res-margin">
-                      <!-- Blog Thumb -->
-                      <div class="blog-thumb">
-                        <a href="#"
-                          ><img
-                            src="assets/blog/general/general-blog-post-1.jpg"
-                            alt="Alzhimer's info"
-                        /></a>
-                      </div>
-                      <div class="css-1bot5uz">
-                        Image by
-                        <a
-                        href="https://www.freepik.com/free-photo/senior-people-confronting-alzheimer-disease_16518797.htm#fromView=search&page=1&position=49&uuid=c95bb7c4-d694-421a-9478-14609cd8e0ca"
-                        class="css-vurnku"
-                        > Freepik</a
-                      >
-                      </div>
-                      <!-- Blog Content -->
-                      <div class="blog-content p-4">
-                        <!-- Meta Info -->
-                        <ul class="meta-info d-flex justify-content-between">
-                          <li>By <a href="#">NeuroAscend.AI</a></li>
-                          <li><a href="#">May 23, 2023</a></li>
-                        </ul>
-                        <!-- Blog Title -->
-                        <h3 class="blog-title my-3">
-                          <a href="#"
-                            >Understanding the Basics of Alzheimer’s Disease and
-                            Providing Support for Those Affected</a
-                          >
-                        </h3>
-                        <p>
-                          Millions of individuals throughout the world are afflicted
-                          by the degenerative brain ailment known as Alzheimer’s
-                          disease. One of the main causes of dementia, it is a
-                          degenerative disorder that can lead to serious memory loss
-                          and cognitive impairment.
-                        </p>
-                        <a href="blog-1.html" class="blog-btn mt-3">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-            
-                <!-- Add more cards as needed -->
-
-            
-                <!-- Add more cards as needed -->
-              </div>
-            
-           </div>
- 
-
-
-      </section>
-      <!-- ***** Blog Area End ***** -->
-          <!-- ***** Supporter Area Start ***** -->
-    <section class="section counter-area ptb_50">
-        <!-- Section Heading -->
-        <div class="section-heading text-center">
-            <h2>Our Supporters</h2>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-5 col-sm-3 single-counter text-center">
-                <div class="counter-inner p-3 p-md-0">
-                    <!-- Counter Item -->
-                    <div class="counter-item d-inline-block mb-3">
-                        <a
-                                href="https://fi.co/"
-                                target="_blank"
-                        >
-                            <img
-                                    src="assets/supporters/fi_logo_square.png"
-                                    alt="The Founders Institute"
-                            />
-                        </a>
-                    </div>
-                </div>
+        <!-- ***** Blog Area Start ***** -->
+        <section id="blog" class="section blog-area ptb_100">
+            <div class="section-heading text-center">
+                <h2>Discover our articles about Alzheimer's disease</h2>
             </div>
-                <div class="col-5 col-sm-3 single-counter text-center">
-                    <div class="counter-inner p-3 p-md-0">
-                        <!-- Counter Item -->
-                        <div class="counter-item-georgetown-university d-inline-block mb-3">
-                            <a
-                                    href="https://www.georgetown.edu/"
-                                    target="_blank"
-                            >
-                                <img
-                                        src="assets/supporters/georgetown-uni-logo-2.jpeg"
-                                        alt="Georgetown University"
-                                />
-                            </a>
+
+            <!-- Your card elements go here -->
+            <div class="container">
+                <div class="slider">
+
+
+                    <!-- First card -->
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/general/general-blog-post-7.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://unsplash.com/@sweetlifediabetes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                        class="css-vurnku"
+                                >Sweet Life</a
+                                >
+                                on
+                                <a
+                                        href="https://unsplash.com/photos/a-person-holding-a-small-device-in-their-hands-bPRZiasA8SM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                        class="css-vurnku"
+                                >Unsplash</a
+                                >
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Feb 25, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Unveiling the Complex Link Between Diabetes and Cognitive
+                                        Decline in Aging Adults
+                                    </a>
+                                </h3>
+                                <p>
+                                    The investigation sought to overcome prior limitations in
+                                    research methodology regarding the association between
+                                    diabetes and cognitive decline by conducting an in-depth
+                                    analysis of longitudinal data from the Ginkgo Evaluation of
+                                    Memory Study.
+                                </p>
+                                <a href="blog-general-post-7.html" class="blog-btn mt-3"
+                                >Read More</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-5 col-sm-3 single-counter text-center">
-                  <div class="counter-inner p-3 p-md-0">
-                      <!-- Counter Item -->
-                      <div class="counter-item-cohen-caregiving d-inline-block mb-3">
-                          <a
-                                  href="https://cohencaregivingsupport.com/services"
-                                  target="_blank"
-                          >
-                              <img
-                                      src="assets/supporters/cohen-caregiving-support-logo.png"
-                                      alt="Cohen Caregiving Support"
-                              />
-                          </a>
-                      </div>
-                  </div>
-              </div>
-                <div class="col-5 col-sm-3 single-counter">
-                    <div class="p-3 p-md-0">
-                        <!-- Counter Item -->
-                        <div class="counter-item d-inline-block mb-3">
-                            <a
-                                    href="https://www.genoaes.com/"   
-                                    target="_blank"                         >
-                                <img
-                                        src="assets/supporters/genoaes-logo.jpeg"
-                                        alt="Genoa Entrepreneurship School"
-                                />
-                            </a>
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/general/general-blog-post-6.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/memory-loss-dementia-alzheimer-concept-created-with-generative-ai-technology_40871019.htm#fromView=search&page=1&position=8&uuid=eb4df28c-549b-4bfd-b8d0-90b5ebb49f40"
+                                        class="css-vurnku"
+                                >
+                                    atlascompany</a
+                                >
+                                on Freepik
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Feb 25, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Harnessing Deep Learning for Early Detection and
+                                        Subtyping of Cognitive Decline: Advancements and
+                                        Implications
+                                    </a>
+                                </h3>
+                                <p>
+                                    Dementia and other neurodegenerative diseases represent
+                                    significant public health challenges worldwide, affecting
+                                    millions of individuals and placing a substantial burden on
+                                    healthcare systems. Despite their prevalence, these
+                                    conditions are often underdiagnosed, particularly in their
+                                    early stages when intervention could be most effective.
+                                </p>
+                                <a href="blog-general-post-6.html" class="blog-btn mt-3"
+                                >Read More</a
+                                >
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-5 col-sm-3 single-counter text-center">
-                    <div class="counter-inner p-3 p-md-0">
-                        <!-- Counter Item -->
-                        <div class="counter-item d-inline-block mb-3">
-                            <a
-                                    href="https://unige.it/en"
-                                    target="_blank"
-                            >
-                                <img
-                                        src="assets/supporters/unige-logo.png"
-                                        alt="University of Genoa"
-                                />
-                            </a>
+
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/general/general-blog-post-5.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/robot-handshake-human-background-futuristic-digital-age_17850426.htm#fromView=search&page=1&position=45&uuid=f3a02b15-cf16-42ab-a221-68d3aa97ab79"
+                                        class="css-vurnku"
+                                >
+                                    rawpixel.com</a
+                                >
+                                on Freepik
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Feb 25, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Unveiling Early Signs of Cognitive Decline: Deep Learning
+                                        in Clinical Notes
+                                    </a>
+                                </h3>
+                                <p>
+                                    Dementia, a complex neurodegenerative syndrome characterized
+                                    by progressive cognitive decline and memory impairment,
+                                    represents a significant global health challenge, afflicting
+                                    over 50 million individuals worldwide. Despite its profound
+                                    impact, dementia often remains underdiagnosed due to the
+                                    lack of standardized diagnostic procedures and the
+                                    labor-intensive nature of the diagnostic process.
+                                </p>
+                                <a href="blog-general-post-5.html" class="blog-btn mt-3"
+                                >Read More</a
+                                >
+                            </div>
                         </div>
                     </div>
+
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/exercise/exercise-blog-post-2-thumb.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://unsplash.com/@elli19?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                        class="css-vurnku"
+                                >Elena Kloppenburg</a
+                                >
+                                on
+                                <a
+                                        href="https://unsplash.com/photos/pink-dumbbell-on-pink-textile-erUC4fTtCuo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                        class="css-vurnku"
+                                >Unsplash</a
+                                >
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Feb 25, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Understanding BMI, Physical Activity, and Dementia
+                                        Progression</a
+                                    >
+                                </h3>
+                                <p>
+                                    Dementia affects more than 5 million Americans aged 65 and
+                                    older, with this number expected to triple by 2050. Growing
+                                    evidence suggests that cardiovascular risk factors (such as
+                                    overweight or obesity, high cholesterol, hypertension, and
+                                    diabetes) are significant risk factors for dementia.
+                                    However, the mechanism behind the association between high
+                                    adiposity and dementia risk remains uncertain. While some
+                                    studies have shown an association between higher weight or
+                                    body mass index (BMI) at age 50 and dementia risk, others
+                                    have observed an inverse relationship in individuals aged 65
+                                    and older, termed the 'obesity paradox' in the literature.
+                                </p>
+                                <a href="blog-exercise-post-2.html" class="blog-btn mt-3"
+                                >Read More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#">
+                                    <img src="assets/blog/general/general-blog-post-3.jpg" alt="Alzheimer's info">
+                                </a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/doctor-performing-medical-research-lab_24236632.htm#fromView=search&page=2&position=1&uuid=6defdcad-5231-4d2b-9d71-0246f582ca0d"
+                                        class="css-vurnku"
+                                > Freepik</a
+                                >
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Jan 15, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#">Unveiling the Complexities of Alzheimer's Disease: Insights from
+                                        Research Frameworks and Gender Disparities</a>
+                                </h3>
+                                <p>
+                                    Alzheimer's disease (AD) poses a significant challenge, being a progressive
+                                    neurodegenerative disorder with no known cure. Recent research has delved into
+                                    defining AD not just as a clinical entity but as a biological phenomenon. The NIA-AA
+                                    Research Framework proposes a shift from syndromal to a biomarker-based definition
+                                    of AD, aiming for targeted interventions grounded in biological understanding.
+                                </p>
+                                <a href="blog-general-post-3.html" class="blog-btn mt-3">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/general/general-blog-post-4.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/shot-senior-man-looking-out-window-while-sitting-wheelchair-homeelder-asian-male-stay-home-alone-wheelchair-look-view-out-window-from-living-room_27949520.htm#fromView=search&page=1&position=1&uuid=c281999c-858a-4668-ac7a-1af75ea6a41e?log-in=google"
+                                        class="css-vurnku"
+                                > Lifestylememory</a
+                                >
+                                on Freepik
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Jan 15, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Navigating the Alzheimer's Challenge: A Holistic
+                                        Perspective
+                                    </a>
+                                </h3>
+                                <p>
+                                    Alzheimer's disease, an inexorable neurodegenerative force,
+                                    not only presents a medical challenge but also raises
+                                    profound ethical questions about maintaining dignity and
+                                    quality of life amidst cognitive decline and the inexorable
+                                    march towards death. This ethical conundrum is accentuated
+                                    by the fact that those directly affected often struggle to
+                                    express their preferences due to cognitive impairments.
+                                </p>
+                                <a href="blog-general-post-4.html" class="blog-btn mt-3"
+                                >Read More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/exercise/exercise-blog-post-1-thumb.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/senior-couple-training-together_10847288.htm#fromView=search&page=4&position=3&uuid=d0415e0e-58e5-4f53-9ad7-4c70565b0f8b"
+                                        class="css-vurnku"
+                                > Freepik</a
+                                >
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Jan 15, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Unveiling the Cognitive Shield: Exploring the Nexus of
+                                        Exercise, Hormones, and Alzheimer's Disease Risk
+                                        Reduction</a
+                                    >
+                                </h3>
+                                <p>
+                                    Unlocking the potential to safeguard our minds! Delving into
+                                    the fascinating realm where physical activity meets
+                                    cognitive health, let's explore the powerful connection
+                                    between exercise and Alzheimer's disease (AD). Scientific
+                                    studies reveal a 45% reduction in AD risk associated with
+                                    regular exercise, underlining the profound impact of an
+                                    active lifestyle.
+                                </p>
+                                <a href="blog-exercise-post-1.html" class="blog-btn mt-3"
+                                >Read More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/activity/activity-blog-post-1-thumb.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/elderly-man-confronting-alzheimer-disease_16518578.htm#fromView=search&page=1&position=13&uuid=d28dabcc-377f-4c6a-a64e-22ba15c6d626"
+                                        class="css-vurnku"
+                                > Freepik</a
+                                >
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Jan 15, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Cognitive Enrichment: Unveiling the Power of Intelligence
+                                        Activities in Alzheimer's Care and Well-being</a
+                                    >
+                                </h3>
+                                <p>
+                                    Unlock a world of meaningful engagement and intellectual
+                                    stimulation with Intelligence Activities. Take a proactive
+                                    step towards maintaining cognitive function and enjoying a
+                                    fulfilling lifestyle, uniquely catered to your Alzheimer's
+                                    level. Embarking on a journey into the world of cognition
+                                    and leisure activities! Our meta-analysis uncovered a
+                                    profound link between engaging in leisure activities and a
+                                    reduced risk of Age-Related Cognitive Decline (ACD),
+                                    including Alzheimer's Disease (AD) and Vascular Dementia
+                                    (VD).
+                                </p>
+                                <a href="blog-activity-post-1.html" class="blog-btn mt-3"
+                                >Read More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/diet/diet-blog-post-1-thumb.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/top-view-delicious-fruit-salad-inside-plate-with-fresh-fruits-dark-tropical-fruit-tree-exotic-ripe-diet-photo_16387786.htm#from_view=detail_alsolike"
+                                        class="css-vurnku"
+                                > KamranAydinov</a
+                                >
+                                on Freepik
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">Jan 15, 2024</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Navigating the Nutritional Maze: Unraveling the Complex
+                                        Relationship Between Diet, Lifestyle, and Cognitive
+                                        Well-being in Alzheimer's Disease</a
+                                    >
+                                </h3>
+                                <p>
+                                    Embark on a journey through the intricate relationship
+                                    between nutrition and cognitive well-being in the context of
+                                    Alzheimer's disease (AD) As the aging population grapples
+                                    with dementia, our commitment to understanding the vital
+                                    connection between lifestyle and cognitive health becomes
+                                    paramount. Explore the world beyond macronutrients, where
+                                    nutrients with neuroprotective and antioxidant properties
+                                    play a pivotal role in preventing and treating AD.
+                                </p>
+                                <a href="blog-diet-post-1.html" class="blog-btn mt-3"
+                                >Read More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second card -->
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/general/general-blog-post-2.jpg"
+                                        alt="Empowering Individuals with Alzheimer’s"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/old-young-man-holding-hands-close-up_36802621.htm#fromView=search&page=2&position=52&uuid=1ac045c9-0c6d-492b-a387-8a86a87c2d14"
+                                        class="css-vurnku"
+                                > pvproductions</a
+                                >
+                                on Freepik
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">May 31, 2023</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Empowering Individuals with Alzheimer’s: Enhancing
+                                        Quality of Life and Caregiver Support</a
+                                    >
+                                </h3>
+                                <p>
+                                    This article expands on our earlier investigation of
+                                    Alzheimer’s disease by exploring the many facets of this
+                                    neurological condition. We will talk about creative ideas,
+                                    doable plans of action, and neighborhood resources that may
+                                    dramatically improve the quality of life for those impacted
+                                    by the condition.
+                                </p>
+                                <a href="blog-2.html" class="blog-btn mt-3">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third card -->
+                    <div class="col-12 col-md-6">
+                        <!-- Single Blog -->
+                        <div class="single-blog res-margin">
+                            <!-- Blog Thumb -->
+                            <div class="blog-thumb">
+                                <a href="#"
+                                ><img
+                                        src="assets/blog/general/general-blog-post-1.jpg"
+                                        alt="Alzhimer's info"
+                                /></a>
+                            </div>
+                            <div class="css-1bot5uz">
+                                Image by
+                                <a
+                                        href="https://www.freepik.com/free-photo/senior-people-confronting-alzheimer-disease_16518797.htm#fromView=search&page=1&position=49&uuid=c95bb7c4-d694-421a-9478-14609cd8e0ca"
+                                        class="css-vurnku"
+                                > Freepik</a
+                                >
+                            </div>
+                            <!-- Blog Content -->
+                            <div class="blog-content p-4">
+                                <!-- Meta Info -->
+                                <ul class="meta-info d-flex justify-content-between">
+                                    <li>By <a href="#">NeuroAscend.AI</a></li>
+                                    <li><a href="#">May 23, 2023</a></li>
+                                </ul>
+                                <!-- Blog Title -->
+                                <h3 class="blog-title my-3">
+                                    <a href="#"
+                                    >Understanding the Basics of Alzheimer’s Disease and
+                                        Providing Support for Those Affected</a
+                                    >
+                                </h3>
+                                <p>
+                                    Millions of individuals throughout the world are afflicted
+                                    by the degenerative brain ailment known as Alzheimer’s
+                                    disease. One of the main causes of dementia, it is a
+                                    degenerative disorder that can lead to serious memory loss
+                                    and cognitive impairment.
+                                </p>
+                                <a href="blog-1.html" class="blog-btn mt-3">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more cards as needed -->
+
+
+                    <!-- Add more cards as needed -->
                 </div>
+
             </div>
-        </div>
-    </section>
-    <!-- ***** Supporter Area End ***** -->
 
 
-   
-    <!-- ***** Subscribe Area Start ***** -->
-    <section id="subscribe" style="padding-top: 100px; padding-bottom: 100px;" id=""><div class="section work-area overflow-hidden ptb_100">
-        <div class="css-nff9c2"><div class="css-sk6np7">
-            <h2 class="css-62nfdx">Subscribe</h2>
-            <p class="css-1uv6fvg">Please subscribe to be notified when our app is released.</p>
-            <form>
-                <div class="css-1t4ab4g">
-                    <label for="email" class="css-1fgxed9">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Please enter your e-mail address" class="css-143zc93">
-                    <div></div>
-                    <button type="submit" class="subscribe__btn css-1j8344h" aria-label="Subscribe">Subscribe</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-</section>
-<!-- ***** Subscribe Area End  ***** -->
-
-
-    <!--====== Height Emulator Area Start ======-->
-    <div class="height-emulator d-none d-lg-block"></div>
-    <!--====== Height Emulator Area End ======-->
-
-    <!--====== Footer Area Start ======-->
-    <footer class="footer-area footer-fixed bg-gray">
-        <!-- Footer Top -->
-        <div class="footer-top ptb_100">
+        </section>
+        <!-- ***** Blog Area End ***** -->
+        <!-- ***** Supporter Area Start ***** -->
+        <section class="section counter-area ptb_50">
+            <!-- Section Heading -->
+            <div class="section-heading text-center">
+                <h2>Our Supporters</h2>
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <!-- Footer Items -->
-                        <div class="footer-items">
-                            <!-- Logo -->
-                            <a  class="navbar-brand" href="#">
-                                <img class="logo-footer" src="assets/logo/logo-1.png" alt=""/>
-                            </a>
-                            <!-- <p class="mt-2 mb-3">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Quis non, fugit totam vel laboriosam vitae.
-                            </p> -->
-                            <!-- Social Icons -->
-                            <div class="social-icons d-flex">
-                                <a  href="https://www.linkedin.com/company/neuroascend-ai/mycompany/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#701f9c}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#701f9c}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                                </a>
-                                <a href="https://www.instagram.com/neuroascendai/?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#701f9c}</style><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#701f9c}</style><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
+                    <div class="col-5 col-sm-3 single-counter text-center">
+                        <div class="counter-inner p-3 p-md-0">
+                            <!-- Counter Item -->
+                            <div class="counter-item d-inline-block mb-3">
+                                <a
+                                        href="https://fi.co/"
+                                        target="_blank"
+                                >
+                                    <img
+                                            src="assets/supporters/fi_logo_square.png"
+                                            alt="The Founders Institute"
+                                    />
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <!-- Footer Items -->
-                        <div class="footer-items">
-                            <!-- Footer Title -->
-                            <h3 class="footer-title mb-2">Useful Links</h3>
-                            <ul>
-                                <li class="py-2"><a href="#home">Home</a></li>
-                                <li class="py-2"><a href="#features">Features</a></li>
-                                <!-- <li class="py-2"><a href="#review">User Comments</a></li> -->
-                                <li class="py-2"><a href="index.html#blog">Blog</a></li>
-                                <li class="py-2"><a href="#subscribe">Subscribe</a></li>
-                            </ul>
+                    <div class="col-5 col-sm-3 single-counter text-center">
+                        <div class="counter-inner p-3 p-md-0">
+                            <!-- Counter Item -->
+                            <div class="counter-item-georgetown-university d-inline-block mb-3">
+                                <a
+                                        href="https://www.georgetown.edu/"
+                                        target="_blank"
+                                >
+                                    <img
+                                            src="assets/supporters/georgetown-uni-logo-2.jpeg"
+                                            alt="Georgetown University"
+                                    />
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Copyright Area -->
-                        <div
-                                class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4"
-                        >
-                            <!-- Copyright Left -->
-                            <div class="copyright-left">
-                                &copy; Copyright by 2023 NeuroAscend.AI, Inc
+                    <div class="col-5 col-sm-3 single-counter text-center">
+                        <div class="counter-inner p-3 p-md-0">
+                            <!-- Counter Item -->
+                            <div class="counter-item-cohen-caregiving d-inline-block mb-3">
+                                <a
+                                        href="https://cohencaregivingsupport.com/services"
+                                        target="_blank"
+                                >
+                                    <img
+                                            src="assets/supporters/cohen-caregiving-support-logo.png"
+                                            alt="Cohen Caregiving Support"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 single-counter">
+                        <div class="p-3 p-md-0">
+                            <!-- Counter Item -->
+                            <div class="counter-item d-inline-block mb-3">
+                                <a
+                                        href="https://www.genoaes.com/"
+                                        target="_blank">
+                                    <img
+                                            src="assets/supporters/genoaes-logo.jpeg"
+                                            alt="Genoa Entrepreneurship School"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 single-counter text-center">
+                        <div class="counter-inner p-3 p-md-0">
+                            <!-- Counter Item -->
+                            <div class="counter-item d-inline-block mb-3">
+                                <a
+                                        href="https://unige.it/en"
+                                        target="_blank"
+                                >
+                                    <img
+                                            src="assets/supporters/unige-logo.png"
+                                            alt="University of Genoa"
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!--====== Footer Area End ======-->
-</div>
+        </section>
+        <!-- ***** Supporter Area End ***** -->
 
-<!-- ***** All jQuery Plugins ***** -->
+
+        <!-- ***** Subscribe Area Start ***** -->
+        <section id="subscribe" style="padding-top: 100px; padding-bottom: 100px;" id="">
+            <div class="section work-area overflow-hidden ptb_100">
+                <div class="css-nff9c2">
+                    <div class="css-sk6np7">
+                        <h2 class="css-62nfdx">Subscribe</h2>
+                        <p class="css-1uv6fvg">Please subscribe to be notified when our app is released.</p>
+                        <form id="subscribeForm">
+                            <div class="css-1t4ab4g">
+                                <label for="email" class="css-1fgxed9">Email Address</label>
+                                <input type="email" id="email" name="email"
+                                       placeholder="Please enter your e-mail address" class="css-143zc93">
+                                <div></div>
+                                <button type="submit" class="subscribe__btn css-1j8344h" aria-label="Subscribe">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                        <p id="subscribeMessage" class="css-1uv6fvg" style="margin-top: 25px"></p>
+                        <p id="subscriberCount" class="css-1uv6fvg" style="margin-top: 10px">Number of subscribers: </p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ***** Subscribe Area End  ***** -->
+
+
+        <!--====== Height Emulator Area Start ======-->
+        <div class="height-emulator d-none d-lg-block"></div>
+        <!--====== Height Emulator Area End ======-->
+
+        <!--====== Footer Area Start ======-->
+        <footer class="footer-area footer-fixed bg-gray">
+            <!-- Footer Top -->
+            <div class="footer-top ptb_100">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="#">
+                                    <img class="logo-footer" src="assets/logo/logo-1.png" alt=""/>
+                                </a>
+                                <!-- <p class="mt-2 mb-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Quis non, fugit totam vel laboriosam vitae.
+                                </p> -->
+                                <!-- Social Icons -->
+                                <div class="social-icons d-flex">
+                                    <a href="https://www.linkedin.com/company/neuroascend-ai/mycompany/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <style>svg {
+                                                fill: #701f9c
+                                            }</style>
+                                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <style>svg {
+                                                fill: #701f9c
+                                            }</style>
+                                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/neuroascendai/?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <style>svg {
+                                                fill: #701f9c
+                                            }</style>
+                                            <path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <style>svg {
+                                                fill: #701f9c
+                                            }</style>
+                                            <path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title mb-2">Useful Links</h3>
+                                <ul>
+                                    <li class="py-2"><a href="#home">Home</a></li>
+                                    <li class="py-2"><a href="#features">Features</a></li>
+                                    <!-- <li class="py-2"><a href="#review">User Comments</a></li> -->
+                                    <li class="py-2"><a href="index.html#blog">Blog</a></li>
+                                    <li class="py-2"><a href="#subscribe">Subscribe</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Copyright Area -->
+                            <div
+                                    class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4"
+                            >
+                                <!-- Copyright Left -->
+                                <div class="copyright-left">
+                                    &copy; Copyright by 2023 NeuroAscend.AI, Inc
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
+    </div>
+
+    <!-- ***** All jQuery Plugins ***** -->
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var homeLink = document.getElementById('NavbarHome');
             var homeSection = document.getElementById('home');
 
-            homeLink.addEventListener('click', function(e) {
+            homeLink.addEventListener('click', function (e) {
                 e.preventDefault(); // Prevent the default anchor behavior
-                homeSection.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the 'home' section
+                homeSection.scrollIntoView({behavior: 'smooth'}); // Scroll smoothly to the 'home' section
             });
 
-           
 
-            
         });
-           
-    
-        
+
+
     </script>
 
-    
+
     <!-- jQuery(necessary for all JavaScript plugins) -->
-<script src="assets/js/jquery/jquery.min.js"></script>
+    <script src="assets/js/jquery/jquery.min.js"></script>
 
-<!-- Bootstrap js -->
-<script src="assets/js/bootstrap/popper.min.js"></script>
-<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
 
-<!-- Plugins js -->
-<script src="assets/js/plugins/plugins.min.js"></script>
+    <!-- Plugins js -->
+    <script src="assets/js/plugins/plugins.min.js"></script>
 
-<!-- Active js -->
-<script src="assets/js/active.js"></script>
+    <!-- Active js -->
+    <script src="assets/js/active.js"></script>
+    <script>
+        $(document).ready(function() {
 
-<script>
-  $(document).ready(function(){
-      $('.slider').slick({
-        slidesToShow: 2, // Display three cards at the same time
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: false,
-        prevArrow: '',
-        nextArrow: '',
-        responsive: [
-          {
-            breakpoint: 768, // Breakpoint for smaller screens
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-        ]
-      });
-    });
-  </script>
+            const base_url = 'https://neuroascend.azurewebsites.net';
+            // Sayfa yüklendiğinde abone sayısını al
+            $.ajax({
+                type: 'GET',
+                url: base_url + '/api/v1/UserWaitlist/SubscriberCount',
+                success: function(count) {
+                    if(count < 10)
+                        count = 10;
+                    $('#subscriberCount').text('Number of subscribers: ' + count + '+');
+                },
+                error: function(xhr) {
+                    console.log(xhr.responseJSON);
+                }
+            });
+
+            $('#subscribeForm').submit(function(e) {
+                e.preventDefault();
+
+                var email = $('#email').val();
+                $.ajax({
+                    type: 'POST',
+                    url: base_url + '/api/v1/UserWaitlist/Subscribe',
+                    data: JSON.stringify(email),
+                    contentType: 'application/json',
+                    success: function(response) {
+                        if(response.count < 10)
+                            response.count = 10;
+                        console.log(response.count);
+                        $('#subscribeMessage').text(response.message);
+                        $('#subscriberCount').text('Number of subscribers: ' + response.count + '+');
+                        $('#email').val('');
+                    },
+                    error: function(xhr) {
+                        $('#subscribeMessage').text(xhr.responseJSON);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 2, // Display three cards at the same time
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                prevArrow: '',
+                nextArrow: '',
+                responsive: [
+                    {
+                        breakpoint: 768, // Breakpoint for smaller screens
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 
 <!-- Mirrored from theme-land.com/sapp/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Nov 2023 19:53:53 GMT -->
