@@ -1712,8 +1712,8 @@
                                 </button>
                             </div>
                         </form>
-                        <p id="subscribeMessage" class="css-1uv6fvg" style="margin-top: 25px"></p>
-                        <p id="subscriberCount" class="css-1uv6fvg" style="margin-top: 10px">Number of subscribers: </p>
+<!--                        <p id="subscribeMessage" class="css-1uv6fvg" style="margin-top: 25px"></p>-->
+<!--                        <p id="subscriberCount" class="css-1uv6fvg" style="margin-top: 10px">Number of subscribers: </p>-->
                     </div>
                 </div>
         </section>
@@ -1850,46 +1850,46 @@
     <!-- Active js -->
     <script src="assets/js/active.js"></script>
     <script>
-        $(document).ready(function() {
-
-            const base_url = 'https://neuroascend.azurewebsites.net';
-            // Sayfa yüklendiğinde abone sayısını al
-            $.ajax({
-                type: 'GET',
-                url: base_url + '/api/v1/UserWaitlist/SubscriberCount',
-                success: function(count) {
-                    if(count < 10)
-                        count = 10;
-                    $('#subscriberCount').text('Number of subscribers: ' + count + '+');
-                },
-                error: function(xhr) {
-                    console.log(xhr.responseJSON);
-                }
-            });
-
-            $('#subscribeForm').submit(function(e) {
-                e.preventDefault();
-
-                var email = $('#email').val();
-                $.ajax({
-                    type: 'POST',
-                    url: base_url + '/api/v1/UserWaitlist/Subscribe',
-                    data: JSON.stringify(email),
-                    contentType: 'application/json',
-                    success: function(response) {
-                        if(response.count < 10)
-                            response.count = 10;
-                        console.log(response.count);
-                        $('#subscribeMessage').text(response.message);
-                        $('#subscriberCount').text('Number of subscribers: ' + response.count + '+');
-                        $('#email').val('');
-                    },
-                    error: function(xhr) {
-                        $('#subscribeMessage').text(xhr.responseJSON);
-                    }
-                });
-            });
-        });
+        // $(document).ready(function() {
+        //
+        //     const base_url = 'https://neuroascend.azurewebsites.net';
+        //     // Sayfa yüklendiğinde abone sayısını al
+        //     $.ajax({
+        //         type: 'GET',
+        //         url: base_url + '/api/v1/UserWaitlist/SubscriberCount',
+        //         success: function(count) {
+        //             if(count < 10)
+        //                 count = 10;
+        //             $('#subscriberCount').text('Number of subscribers: ' + count + '+');
+        //         },
+        //         error: function(xhr) {
+        //             console.log(xhr.responseJSON);
+        //         }
+        //     });
+        //
+        //     $('#subscribeForm').submit(function(e) {
+        //         e.preventDefault();
+        //
+        //         var email = $('#email').val();
+        //         $.ajax({
+        //             type: 'POST',
+        //             url: base_url + '/api/v1/UserWaitlist/Subscribe',
+        //             data: JSON.stringify(email),
+        //             contentType: 'application/json',
+        //             success: function(response) {
+        //                 if(response.count < 10)
+        //                     response.count = 10;
+        //                 console.log(response.count);
+        //                 $('#subscribeMessage').text(response.message);
+        //                 $('#subscriberCount').text('Number of subscribers: ' + response.count + '+');
+        //                 $('#email').val('');
+        //             },
+        //             error: function(xhr) {
+        //                 $('#subscribeMessage').text(xhr.responseJSON);
+        //             }
+        //         });
+        //     });
+        // });
     </script>
     <script>
         $(document).ready(function () {
