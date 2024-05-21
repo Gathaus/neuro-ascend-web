@@ -1851,7 +1851,6 @@
     <script src="assets/js/active.js"></script>
     <script>
         //
-        //     const base_url = 'https://neuroascend.azurewebsites.net';
         //     // Sayfa yüklendiğinde abone sayısını al
         //     $.ajax({
         //         type: 'GET',
@@ -1866,6 +1865,8 @@
         //         }
         //     });
         //
+        const base_url = 'https://neuroascend.azurewebsites.net';
+        
         $(document).ready(function() {
         
             $('#subscribeForm').submit(function(e) {
@@ -1880,8 +1881,10 @@
                     success: function(response) {
                         // if(response.count < 10)
                         //     response.count = 10;
-                        // console.log(response.count); 
-                        $('#subscribeMessage').text(response.messge);
+                        // console.log(response.count);
+                        // console.log(response)
+                        // console.log(response.message)
+                        $('#subscribeMessage').text(response.message);
                         // $('#subscriberCount').text('Number of subscribers: ' + response.count + '+');
                         // $('#email').val('');
                     },
