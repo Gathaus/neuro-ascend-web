@@ -1850,7 +1850,6 @@
     <!-- Active js -->
     <script src="assets/js/active.js"></script>
     <script>
-        // $(document).ready(function() {
         //
         //     const base_url = 'https://neuroascend.azurewebsites.net';
         //     // Sayfa yüklendiğinde abone sayısını al
@@ -1862,34 +1861,36 @@
         //                 count = 10;
         //             $('#subscriberCount').text('Number of subscribers: ' + count + '+');
         //         },
-        //         error: function(xhr) {
+        //          error: function(xhr) {
         //             console.log(xhr.responseJSON);
         //         }
         //     });
         //
-        //     $('#subscribeForm').submit(function(e) {
-        //         e.preventDefault();
-        //
-        //         var email = $('#email').val();
-        //         $.ajax({
-        //             type: 'POST',
-        //             url: base_url + '/api/v1/UserWaitlist/Subscribe',
-        //             data: JSON.stringify(email),
-        //             contentType: 'application/json',
-        //             success: function(response) {
-        //                 if(response.count < 10)
-        //                     response.count = 10;
-        //                 console.log(response.count); 
-        //                 $('#subscribeMessage').text(response.messge);
-        //                 $('#subscriberCount').text('Number of subscribers: ' + response.count + '+');
-        //                 $('#email').val('');
-        //             },
-        //             error: function(xhr) {
-        //                 $('#subscribeMessage').text(xhr.responseJSON);
-        //             }
-        //         });
-        //     });
-        // });
+        $(document).ready(function() {
+        
+            $('#subscribeForm').submit(function(e) {
+                e.preventDefault();
+
+                var email = $('#email').val();
+                $.ajax({
+                    type: 'POST',
+                    url: base_url + '/api/v1/UserWaitlist/Subscribe',
+                    data: JSON.stringify(email),
+                    contentType: 'application/json',
+                    success: function(response) {
+                        // if(response.count < 10)
+                        //     response.count = 10;
+                        // console.log(response.count); 
+                        // $('#subscribeMessage').text(response.messge);
+                        // $('#subscriberCount').text('Number of subscribers: ' + response.count + '+');
+                        // $('#email').val('');
+                    },
+                    error: function(xhr) {
+                        $('#subscribeMessage').text(xhr.responseJSON);
+                    }
+                });
+            });
+        });
     </script>
     <script>
         $(document).ready(function () {
