@@ -1866,10 +1866,9 @@
         //     });
         //
         const base_url = 'https://neuroascend.azurewebsites.net';
-        
+
         $(document).ready(function() {
-        
-            $('#subscribeForm').submit(function(e) {
+            $('.subscribe__btn').click(function(e) {
                 e.preventDefault();
 
                 var email = $('#email').val();
@@ -1878,20 +1877,18 @@
                     url: base_url + '/api/v1/UserWaitlist/Subscribe',
                     data: JSON.stringify(email),
                     contentType: 'application/json',
+                    async: false,
                     success: function(response) {
-                        // if(response.count < 10)
-                        //     response.count = 10;
-                        // console.log(response.count);
-                        // console.log(response)
-                        // console.log(response.message)
-                        $('#subscribeMessage').text(response.message);
-                        // $('#subscriberCount').text('Number of subscribers: ' + response.count + '+');
-                        // $('#email').val('');
+                        // Başarılı yanıt işlemleri
                     },
                     error: function(xhr) {
-                        $('#subscribeMessage').text(xhr.responseJSON);
+                        // Hata işlemleri
                     }
                 });
+
+                // İstek gönderildikten sonra mesaj göster ve e-posta alanını temizle
+                $('#subscribeMessage').text('Thank you for subscribing!');
+                $('#email').val('');
             });
         });
     </script>
