@@ -741,7 +741,7 @@ img {
 
 /*BACKGROUND IMAGES*/
 .welcome-area {
-  background: rgba(0, 0, 0, 0) url("../img/bg/m.gif") no-repeat scroll
+  background: rgba(0, 0, 0, 0) url("../img/bg/welcome-bg.jpg") no-repeat scroll
     center center/cover;
 }
 
